@@ -38,14 +38,14 @@
     }
 
     .home{
-        font-size: 45px;
+        font-size: 3vw;
     }
 
     .upperNav a{
         text-decoration: none;
         color: #f8f8f8;
 
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .lowerNav a{
@@ -131,6 +131,8 @@
     }
 
     article img {
+        width: 15vw;
+        height: fit-content;
         border: #413936 double 4px;
         margin: 0;
         padding: 0;
@@ -155,7 +157,7 @@
     }
 
     footer{
-        width: 75vw;
+        width: 73vw;
         
         margin-left: 1.875vw;
 
