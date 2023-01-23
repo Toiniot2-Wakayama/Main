@@ -28,8 +28,6 @@
         height: 100vh;
 
         line-height: 0.8;
-        font-weight: normal;
-        transition: all .15s;
     }
 
     .navTitle{
@@ -37,6 +35,11 @@
 
         letter-spacing: 0.02vw;
         font-size: 22px;
+    }
+    
+    nav a{
+        font-bold: normal;
+        transition: all .15s;
     }
     
     nav a:hover{
