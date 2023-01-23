@@ -86,7 +86,7 @@
 
         margin-left: 1.875vw;
 
-        padding: 2vh 2vw 0 20vw;
+        padding: 2vh 2vw 0 2vw;
 
         background-color: #f8f8f8;
 
@@ -169,31 +169,5 @@
         font-size: 0.875vw;
         font-family: "Alata", "Noto Sans JP", sans-serif;
         text-align: center;
-    }
-
-
-
-
-    main{
-        width: 74vw;
-        margin: 7vh 0 7vh 1.875vw;
-
-        padding: 2vw;
-
-        background-color: #f8f8f8;
-
-        color: #413936;
-        font-size: 20px;
-
-        line-height: 2;
-    }
-
-    .mainTitle{
-        font-size: 45px;
-        line-height: 1;
-
-        padding: 0 1vw 0 1vw;
-
-        border-bottom: #D6547D solid 4px;
     }
 }
