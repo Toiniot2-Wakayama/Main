@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+@media (min-width: 600px) {
+    html{
+        width: 100%;
+        font-family: "Alata", "Noto Sans JP", sans-serif;
+    }
+    
+    body{
+        font-size: 100%;
+        background-color: #f8f8f8;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav{
+        position: fixed;
+
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+
+        top: 0;
+        right: 0;
+
+        width: 17.5vw;
+        height: 100vh;
+
+        line-height: 0.8;
+    }
+
+    .navTitle{
+        display: inline;
+
+        letter-spacing: 0.02vw;
+        font-size: 22px;
+    }
+
+    .home{
+        font-size: 3vw;
+    }
+
+    .upperNav a{
+        text-decoration: none;
+        color: #f8f8f8;
+
+        font-size: 20px;
+    }
+
+    .lowerNav a{
+        text-decoration: none;
+        color: #413936;
+    }
+    
+    .upperNav{
+        height: 75vh;
+
+        top: 0;
+        right: 0;
+
+        padding: 5vh 1vw 4vh 1.75vw;
+
+        background-color:#413936;
+        color: #f8f8f8;
+    }
+
+    .lowerNav{
+        height: 25vh;
+
+        bottom: 0;
+        right: 0;
+
+        padding: 4vh 1vw 4vh 1.75vw;
+
+        background-color: #bed754;
+        color: #413936;
+        font-size: 17px;
+    }
+
+
+    .title{
+        width: 79vw;
+
+        top: 0;
+
+        margin-left: 1.875vw;
+
+        padding: 2vh 2vw 0 2vw;
+
+        background-color: #f8f8f8;
+
+        color: #413936;
+        text-decoration: none;
+        font-size: 75px;
+
+        border-bottom: #bed754 solid 10px;
+    }
+
+    footer{
+        width: 74vw;
+        
+        margin-left: 1.875vw;
+
+        padding: 2vw;
+        
+        background-color: #bed754;
+    
+        color: #413936;
+        font-size: 0.875vw;
+        font-family: "Alata", "Noto Sans JP", sans-serif;
+        text-align: center;
+    }
+
+
+
+
+    main{
+        width: 74vw;
+        margin: 0 0 2vh 1.875vw;
+
+        padding: 2vw;
+
+        background-color: #f8f8f8;
+
+        color: #413936;
+        font-size: 20px;
+
+        line-height: 2;
+    }
+
+    .mainTitle{
+        font-size: 45px;
+        line-height: 1.3;
+        
+        padding: 0 1vw 0 1vw;
+
+        border-bottom: #D6547D solid 4px;
+    }
+}
