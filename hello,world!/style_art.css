@@ -13,7 +13,7 @@
         padding: 0;
     }
 
-    nav{
+    .gNavi{
         position: fixed;
 
         display:flex;
@@ -28,6 +28,52 @@
         height: 100vh;
 
         line-height: 0.8;
+
+        list-style: none;
+    }
+
+    .gNavi a{
+        display: block;
+        text-decoration: none;
+    }
+
+    .gNavi .upperNav li{
+        margin-bottom: 8vh;
+    }
+
+    .gNavi .lowerNav li{
+        margin-bottom: 5vh;
+    }
+
+    .gNavi li a{
+        position: relative;
+    }
+
+    .gNavi li a::after{
+        content: '';
+
+        position: absolute;
+        top: 1.35em;
+        left: 10%;
+
+        width: 80%;
+        height: 2px;
+
+        transition: all .15s;
+        transform: scale(0, 1);
+        transform-origin: left top;
+    }
+
+    .gNavi .upperNav li a::after{
+        background: #f8f8f8;
+    }
+
+    .gNavi .lowerNav li a::after{
+        background: #bed754;
+    }
+
+    .gNavi li a:hover::after{
+        transform: scale(1, 1);
     }
 
     .navTitle{
@@ -36,24 +82,21 @@
         letter-spacing: 0.02vw;
         font-size: 22px;
     }
-    
-    nav a{
-        font-bold: normal;
-        transition: all .15s;
-    }
-    
-    nav a:hover{
-        font-weight: bold;
-    }
 
     .home{
-        font-size: 3vw;
+        font-size: 50px;
+        margin-bottom: 10vh;
+    }
+
+    .followUs{
+        font-size: 1.5vw;
+        margin-bottom: 5vh;
     }
 
     .upperNav a{
         text-decoration: none;
         color: #f8f8f8;
-        
+
         font-size: 20px;
     }
 
@@ -80,7 +123,7 @@
         bottom: 0;
         right: 0;
 
-        padding: 4vh 1vw 4vh 1.75vw;
+        padding: 2vh 1vw 2vh 1.75vw;
 
         background-color: #bed754;
         color: #413936;
