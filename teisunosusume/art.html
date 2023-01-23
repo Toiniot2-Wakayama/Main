@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0, user-scalable = no">
+        <title>TOINIOT² HP</title>
+
+        <link rel = "stylesheet" href = "https://unpkg.com/delstyle.css@1.0.5/delstyle.css">
+        <link rel = "stylesheet" href = "https://toiniot2-wakayama.github.io/Main/teisunosusume/style_art.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alata&family=Noto+Sans+JP:wght@500&family=Noto+Sans+Mono:wght@500&family=Reem+Kufi+Fun:wght@500&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <!--Global Navigation System-->
+        <nav>
+            <div class = upperNav>
+                <a href = "https://toiniot2-wakayama.github.io/Main/">
+                    <div>
+                        <p class = home>TOINIOT²</p>
+                    </div>
+                </a>
+
+                <br><br><br>
+
+                <a href = #>
+                    <div>
+                        <i class = "fa-solid fa-screwdriver-wrench" style = "display: inline;"></i>&nbsp;
+                        <p class = navTitle>Hardware</p>
+                    </div>
+                </a>
+
+                <br><br><br><br><br>
+
+                <a href = #>
+                    <div>
+                        <i class="fa-solid fa-code" style = "display: inline;"></i>&nbsp;
+                        <p class = navTitle>Program</p>
+                    </div>
+                </a>
+
+                <br><br><br><br><br>
+
+                <a href = #>
+                    <div>
+                        <i class="fa-solid fa-comments" style = "display: inline;"></i>&nbsp;
+                        <p class = navTitle>Others</p>
+                    </div>
+                </a>
+            </div>
+            
+            <div class = lowerNav>
+                <a href = "https://twitter.com/toiniot2" target = "_blank" rel = "noopener noreferrer" >
+                    <div>
+                        Our Twitter&nbsp;&nbsp;
+                        <i class = "fa-brands fa-twitter" style = "display: inline;"></i><br><br>
+                        <p class = navTitle>@toiniot2</p>
+                    </div>
+                </a>
+
+                <br><br><br><br>
+
+                <a href = "https://github.com/Toiniot2-Wakayama/" target = "_blank" rel = "noopener noreferrer" >
+                    <div>
+                        Our GitHub&nbsp;&nbsp;
+                        <i class="fa-solid fa-link" style = "display: inline;"></i><br><br>
+                        <p class = navTitle>Toiniot2-Wakayama</p>
+                    </div>
+                </a>
+            </div>
+        </nav>
+
+        <!--HP Title-->
+        
+        <a href = "https://toiniot2-wakayama.github.io/Main/" style = "text-decoration: none;">
+            <div class = title>
+                TOINIOT²
+            </div>
+        </a>
+        
+        <main>
+            <p class = mainTitle>Hello, world!</p>
+            <h3>Q. プログラムを書くとき、値の記録をするにはどのような手段をとるか。</h3><br>
+            多くの場合、答えは2択です。<br>
+            <h3>A. 変数、または定数</h3><br>
+            プログラムの中で状況によって値が変化する変数に対し、定義した以降は一切変化しない定数。どちらのほうが使いやすいのでしょうか。<br>
+            この記事では、TOINIOT²のプログラム班が導き出した結論をお伝えします。<br>
+            <br>
+            まず初めに、それぞれの特徴を見ていきましょう。<br>
+            <ul>
+                <li>
+                <h5>変数</h5>
+                </li>
+                <li>
+                <h5>定数</h5>
+                </li>
+            </ul>
+            <br>
+            プログラム班としては、「基本的に変数を使用するが、状況に応じて定数を使用する」のがベストアンサーだと結論付けました。<br>
+            （異論は認めます。とてもとても認めます。）<br>
+            <br>
+            プログラムの動作中に値が変化するようなものには変数を使用しますが、例えば各センサのしきい値や比例制御などのゲイン値については、あらかじめ定数として定義しておくのがいいと考えました。<br>
+            また、定数の命名の一般的な規則として「定数名は大文字」というものがあります。変数名を小文字で定義することで、どれが定数でどれが変数かの見分けがつきやすいというのも、両方を使う利点ではないでしょうか。<br>
+            センサのしきい値などの人の手で変更することが多い部分については、定数にしておくことでプログラムの上方に記述しておくことができ、編集の利便性も高くなると思います。
+        </main>
+
+        <footer>
+            <p class = copyright>Copyright &copy;2022 toiniot2</p>
+        </footer>
+
+        <script src="https://kit.fontawesome.com/2cd68e5bc6.js" crossorigin="anonymous"></script>
+    </body>
+</html>
