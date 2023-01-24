@@ -25,7 +25,7 @@
         right: 0;
 
         width: 17.5vw;
-        height: 100vh;
+        height: 100%;
 
         line-height: 0.8;
 
@@ -264,15 +264,11 @@
         right: 0;
 
         width: 17.5vw;
-        height: 100vh;
+        height: 100%;
 
         line-height: 0.8;
 
         list-style: none;
-    }
-    
-    li p{
-        display: none;
     }
 
     .gNavi a{
@@ -293,10 +289,7 @@
     }
     
     .navTitle{
-        display: inline;
-
-        letter-spacing: 0.02vw;
-        font-size: 22px;
+        display: none;
     }
 
     .home{
