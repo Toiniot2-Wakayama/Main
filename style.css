@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@media screen and (min-width: 600px) {
+@media (min-width: 600px) {
     html{
         width: 100%;
         font-family: "Alata", "Noto Sans JP", sans-serif;
@@ -19,13 +19,14 @@
         display:flex;
         flex-direction: column;
         justify-content: center;
-        align-items: stretch;
 
         top: 0;
         right: 0;
 
-        width: 17.5vw;
-        height: 100%;
+        margin: 0;
+
+        width: 17.5%;
+        height: 100vh;
 
         line-height: 0.8;
 
@@ -35,6 +36,10 @@
     .gNavi a{
         display: block;
         text-decoration: none;
+    }
+    
+    .gNaviTitle i{
+        display: none;
     }
 
     .gNavi .upperNav li{
@@ -76,11 +81,6 @@
         transform: scale(1, 1);
     }
 
-
-
-
-
-
     .navTitle{
         display: inline;
 
@@ -94,7 +94,7 @@
     }
 
     .followUs{
-        font-size: 27px;
+        font-size: 1.5vw;
         margin-bottom: 5vh;
     }
 
@@ -116,7 +116,7 @@
         top: 0;
         right: 0;
 
-        padding: 5vh 1vw 4vh 1.75vw;
+        padding: 10vh 1vw 4vh 1.75vw;
 
         background-color:#413936;
         color: #f8f8f8;
@@ -128,7 +128,7 @@
         bottom: 0;
         right: 0;
 
-        padding: 2vh 1vw 2vh 1.75vw;
+        padding: 4vh 1vw 2vh 1.75vw;
 
         background-color: #bed754;
         color: #413936;
@@ -137,11 +137,11 @@
 
 
     .title{
-        width: 79vw;
+        width: 79%;
 
         top: 0;
 
-        margin-left: 1.875vw;
+        margin-left: 1.75%;
 
         padding: 2vh 2vw 0 2vw;
 
@@ -158,8 +158,8 @@
         display: flex;
         flex-direction: column;
         
-        width: 79vw;
-        margin: 7vh 0 7vh 1.875vw;
+        width: 79%;
+        margin: 7vh 0 7vh 1.75%;
 
         gap: 15px;
     }
@@ -167,8 +167,8 @@
     article{
         display: flex;
 
-        width: 75vw;
-        
+        width: 100%;
+
         border: #413936 solid 1px;
 
         padding: 2vh 1vw 2vh 1vw;
@@ -214,9 +214,9 @@
     }
 
     footer{
-        width: 74vw;
+        width: 79%;
         
-        margin-left: 1.875vw;
+        margin-left: 1.75%;
 
         padding: 2vw;
         
@@ -229,17 +229,7 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 600px) {
+@media (max-width: 600px){
     html{
         width: 100%;
         font-family: "Alata", "Noto Sans JP", sans-serif;
@@ -251,29 +241,63 @@
         margin: 0;
         padding: 0;
     }
-    
+
     .gNavi{
         position: fixed;
 
         display:flex;
         flex-direction: column;
         justify-content: center;
-        align-items: stretch;
 
         top: 0;
         right: 0;
 
-        width: 17.5vw;
+        margin: 0;
+
+        width: 8%;
         height: 100%;
 
         line-height: 0.8;
 
         list-style: none;
     }
+    
+    .upperNav{
+        height: 75%;
+
+        top: 0;
+        right: 0;
+
+        padding: 10vh 2vw;
+
+        background-color:#413936;
+        color: #f8f8f8;
+    }
+
+    .lowerNav{
+        height: 25%;
+
+        bottom: 0;
+        right: 0;
+
+        padding: 4vh 2vw;
+
+        background-color: #bed754;
+        color: #413936;
+        font-size: 17px;
+    }
 
     .gNavi a{
         display: block;
         text-decoration: none;
+    }
+
+    .gNavi .gNaviTitle{
+        margin-bottom: 8vh;
+    }
+
+    .gNaviTitle i{
+        display: inline;
     }
 
     .gNavi .upperNav li{
@@ -284,73 +308,55 @@
         margin-bottom: 5vh;
     }
 
-    .gNavi li a{
-        position: relative;
-    }
-    
-    .gNavi p{
-        display: none;
-    }
-    
-    .gNavi i{
-        margin-left: 5vw;
-    }
-
-    .home{
-        font-size: 50px;
-        margin-bottom: 10vh;
-    }
-
-    .followUs{
-        font-size: 27px;
-        margin-bottom: 5vh;
-    }
-
-    .upperNav a{
-        text-decoration: none;
-        color: #f8f8f8;
-
-        font-size: 20px;
-    }
-    
     .navTitle{
         display: none;
     }
 
+    .home{
+        display: none;
+    }
+
+    .followUs{
+        display: none;
+    }
+
+    .upperNav a{
+        text-decoration: none;
+
+        color: #f8f8f8;
+        font-size: 15px;
+    }
+
     .lowerNav a{
         text-decoration: none;
+
         color: #413936;
+        font-size: 15px;
     }
-    
-    .upperNav{
-        height: 75vh;
+
+
+    .title{
+        width: 88%;
 
         top: 0;
-        right: 0;
 
-        padding: 5vh 3vw 4vh 3vw;
+        margin-left: 2%;
 
-        background-color:#413936;
-        color: #f8f8f8;
-    }
+        padding: 2vh 2vw 0 2vw;
 
-    .lowerNav{
-        height: 25vh;
+        background-color: #f8f8f8;
 
-        bottom: 0;
-        right: 0;
-
-        padding: 2vh 3vw 2vh 3vw;
-
-        background-color: #bed754;
         color: #413936;
-        font-size: 17px;
+        text-decoration: none;
+        font-size: 30px;
+
+        border-bottom: #bed754 solid 4px;
     }
-    
+
     footer{
-        width: 74vw;
+        width: 88%;
         
-        margin-left: 1.875vw;
+        margin-left: 2%;
 
         padding: 2vw;
         
@@ -360,5 +366,48 @@
         font-size: 0.875vw;
         font-family: "Alata", "Noto Sans JP", sans-serif;
         text-align: center;
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        
+        width: 88%;
+        margin: 7vh 0 7vh 1.75%;
+
+        gap: 15px;
+    }
+    
+    article{
+        width: 100%;
+
+        border: #413936 solid 1px;
+
+        padding: 0;
+
+        background-color: #f8f8f8;
+        
+        color: #413936;
+        font-size: 15px;
+        line-height: 2.4;
+    }
+
+    article img {
+        width: 100%;
+        height: fit-content;
+        border-bottom: #413936 solid 1px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .articleTitle{
+        top: 0;
+        margin: 0;
+        font-size: 25px;
+        line-height: 1.5;
+    }
+
+    article .right{
+        margin: 2% 2%;
     }
 }
