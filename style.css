@@ -394,7 +394,7 @@
 
     article img {
         width: 100%;
-        height: fit-content;
+        height: auto;
         border-bottom: #413936 solid 1px;
         margin: 0;
         padding: 0;
