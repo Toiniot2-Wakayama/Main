@@ -223,7 +223,7 @@
         background-color: #bed754;
     
         color: #413936;
-        font-size: 0.875vw;
+        font-size: 12px;
         font-family: "Alata", "Noto Sans JP", sans-serif;
         text-align: center;
     }
@@ -363,7 +363,7 @@
         background-color: #bed754;
     
         color: #413936;
-        font-size: 0.875vw;
+        font-size: 10px;
         font-family: "Alata", "Noto Sans JP", sans-serif;
         text-align: center;
     }
@@ -394,7 +394,7 @@
 
     article img {
         width: 100%;
-        height: auto;
+
         border-bottom: #413936 solid 1px;
         margin: 0;
         padding: 0;
