@@ -241,6 +241,14 @@
 
 @media screen and (max-width: 600px) {
     html{
+        width: 100%;
+        font-family: "Alata", "Noto Sans JP", sans-serif;
+    }
+    
+    body{
+        font-size: 100%;
         background-color: #413936;
+        margin: 0;
+        padding: 0;
     }
 }
