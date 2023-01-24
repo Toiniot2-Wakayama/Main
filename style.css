@@ -240,4 +240,7 @@
 
 
 @media screen and (max-width: 600px) {
+    html{
+        background-color: #413936;
+    }
 }
