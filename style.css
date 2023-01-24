@@ -308,6 +308,10 @@
 
         font-size: 20px;
     }
+    
+    .navTitle{
+        display: none;
+    }
 
     .lowerNav a{
         text-decoration: none;
