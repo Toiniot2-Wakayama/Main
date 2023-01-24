@@ -247,8 +247,23 @@
     
     body{
         font-size: 100%;
-        background-color: #413936;
+        background-color: #f8f8f8;
         margin: 0;
         padding: 0;
+    }
+    
+    footer{
+        width: 74vw;
+        
+        margin-left: 1.875vw;
+
+        padding: 2vw;
+        
+        background-color: #bed754;
+    
+        color: #413936;
+        font-size: 0.875vw;
+        font-family: "Alata", "Noto Sans JP", sans-serif;
+        text-align: center;
     }
 }
