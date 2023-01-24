@@ -291,6 +291,10 @@
     .gNavi p{
         display: none;
     }
+    
+    .gNavi i{
+        margin-left: 5vw;
+    }
 
     .home{
         font-size: 50px;
