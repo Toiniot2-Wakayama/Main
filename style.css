@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
     html{
         width: 100%;
         font-family: "Alata", "Noto Sans JP", sans-serif;
@@ -239,7 +239,7 @@
 
 
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
     html{
         width: 100%;
         font-family: "Alata", "Noto Sans JP", sans-serif;
