@@ -252,6 +252,100 @@
         padding: 0;
     }
     
+    .gNavi{
+        position: fixed;
+
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+
+        top: 0;
+        right: 0;
+
+        width: 17.5vw;
+        height: 100vh;
+
+        line-height: 0.8;
+
+        list-style: none;
+    }
+    
+    li p{
+        display: none;
+    }
+
+    .gNavi a{
+        display: block;
+        text-decoration: none;
+    }
+
+    .gNavi .upperNav li{
+        margin-bottom: 8vh;
+    }
+
+    .gNavi .lowerNav li{
+        margin-bottom: 5vh;
+    }
+
+    .gNavi li a{
+        position: relative;
+    }
+    
+    .navTitle{
+        display: inline;
+
+        letter-spacing: 0.02vw;
+        font-size: 22px;
+    }
+
+    .home{
+        font-size: 50px;
+        margin-bottom: 10vh;
+    }
+
+    .followUs{
+        font-size: 27px;
+        margin-bottom: 5vh;
+    }
+
+    .upperNav a{
+        text-decoration: none;
+        color: #f8f8f8;
+
+        font-size: 20px;
+    }
+
+    .lowerNav a{
+        text-decoration: none;
+        color: #413936;
+    }
+    
+    .upperNav{
+        height: 75vh;
+
+        top: 0;
+        right: 0;
+
+        padding: 5vh 1vw 4vh 1.75vw;
+
+        background-color:#413936;
+        color: #f8f8f8;
+    }
+
+    .lowerNav{
+        height: 25vh;
+
+        bottom: 0;
+        right: 0;
+
+        padding: 2vh 1vw 2vh 1.75vw;
+
+        background-color: #bed754;
+        color: #413936;
+        font-size: 17px;
+    }
+    
     footer{
         width: 74vw;
         
