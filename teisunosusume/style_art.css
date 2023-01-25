@@ -284,6 +284,22 @@
         text-align: justify;
         margin-bottom: 1vh;
     }
+    
+    .tableRight{
+        border-right: #413936 solid 1px;
+    }
+
+    .tableLeft{
+        border-left: #413936 solid 1px;
+    }
+
+    .tableTop{
+        border-top: #413936 solid 1px;
+    }
+
+    .tableBottom{
+        border-bottom: #413936 solid 1px;
+    }
 
     th{
         font-size: 25px;
@@ -321,6 +337,66 @@
         line-height: 0;
         margin: 0;
         padding: 0;
+    }
+
+    .prRed{
+        display: inline;
+        color: #b83c17
+    }
+
+    .prBlue{
+        display: inline;
+        color: #1961e7
+    }
+
+    .prYellow{
+        display: inline;
+        color: #9b8212;
+    }
+
+    .prGreen{
+        display: inline;
+        color: #2c8d0f
+    }
+
+    .prPurple{
+        display: inline;
+        color: #a023f3
+    }
+
+    .prGray{
+        display: inline;
+        color: #9b9b9b
+    }
+
+    h1{
+        font-size: 35px;
+        font-weight: bold;
+        line-height: 3;
+    }
+
+    h2{
+        font-size: 31px;
+        font-weight: bold;
+        line-height: 3;
+    }
+
+    h3{
+        font-size: 27px;
+        font-weight: bold;
+        line-height: 3;
+    }
+
+    h4{
+        font-size: 23px;
+        font-weight: bold;
+        line-height: 3;
+    }
+
+    h5{
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 3;
     }
 }
 
@@ -580,5 +656,65 @@
         line-height: 0;
         margin: 0;
         padding: 0;
+    }
+
+    .prRed{
+        display: inline;
+        color: #b83c17
+    }
+
+    .prBlue{
+        display: inline;
+        color: #1961e7
+    }
+
+    .prYellow{
+        display: inline;
+        color: #9b8212;
+    }
+
+    .prGreen{
+        display: inline;
+        color: #2c8d0f
+    }
+
+    .prPurple{
+        display: inline;
+        color: #a023f3
+    }
+
+    .prGray{
+        display: inline;
+        color: #9b9b9b
+    }
+
+    h1{
+        font-size: 21px;
+        font-weight: bold;
+        line-height: 3;
+    }
+
+    h2{
+        font-size: 19px;
+        font-weight: bold;
+        line-height: 3;
+    }
+
+    h3{
+        font-size: 17px;
+        font-weight: bold;
+        line-height: 3;
+    }
+
+    h4{
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 3;
+    }
+
+    h5{
+        font-size: 13px;
+        font-weight: bold;
+        line-height: 3;
     }
 }
