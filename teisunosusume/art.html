@@ -6,7 +6,7 @@
         <title>定数のススメ。 | TOINIOT²</title>
 
         <link rel = "stylesheet" href = "https://unpkg.com/ress/dist/ress.min.css">
-        <link rel = "stylesheet" href = "https://toiniot2-wakayama.github.io/Main/teisunosusume/style_art.css" />
+        <link rel = "stylesheet" href = "./style_art.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -88,7 +88,7 @@
             <p class = mainTitle>定数のススメ。</p>
             <h3>Q. プログラムを書くとき、値の記録をするにはどのような手段をとるか。</h3>
             多くの場合、答えは2択です。
-            <h3>A. 変数、または定数</h3><br>
+            <h3>A. 変数、または定数</h3>
             プログラムの中で状況によって値が変化する変数に対し、定義した以降は一切変化しない定数。どちらのほうが使いやすいのでしょうか。<br>
             この記事では、TOINIOT²のプログラム班が導き出した結論をお伝えします。<br>
             <br>
@@ -98,15 +98,15 @@
                     <caption>変数と定数の特徴一覧表</caption>
 
                     <tr>
-                        <th style = "width: 10%;">-</th><th>良い点<small>（よさそうな点）</small></th><th>悪い点<small>（わるそうな点）</small></th><th>参考</th>
+                        <th class = "tableRight tableBottom">-</th><th class = tableBottom>良い点<small>（よさそうな点）</small></th><th class = tableBottom>悪い点<small>（わるそうな点）</small></th><th class = tableBottom>参考</th>
                     </tr>
 
                     <tr>
-                        <th>変数</th><td>状況に応じて任意の値に変数の<br>中身を変更することができる</td><td>値が変化するため、どの時点でどのような値が<br>入っているかを正確に捉えることが困難</td><td>-</td>
+                        <th class = tableRight>変数</th><td>状況に応じて任意の値に変数の<br>中身を変更することができる</td><td>値が変化するため、どの時点でどのような値が<br>入っているかを正確に捉えることが困難</td><td>-</td>
                     </tr>
 
                     <tr>
-                        <th>定数</th><td>不変値として数字の代わりに使用でき、<br>定義時の値を変更し、定数を使用した部分<br>すべてが一度に変更されるため便利</td><td>値を変化させることが出来ないため、<br>任意の値を代入して好きなタイミングで<br>好きな値にすることが出来ない</td><td>定数名は基本的に<br>アルファベット<br>大文字で定義</td>
+                        <th class = tableRight>定数</th><td>不変値として数字の代わりに使用でき、<br>定義時の値を変更し、定数を使用した部分<br>すべてが一度に変更されるため便利</td><td>値を変化させることが出来ないため、<br>任意の値を代入して好きなタイミングで<br>好きな値にすることが出来ない</td><td>定数名は基本的に<br>アルファベット<br>大文字で定義</td>
                     </tr>
                 </table>
             </div><br>
@@ -123,56 +123,71 @@
             参考までに、私たちのプログラムの一部を載せておきます。フルのソースコードは<a href = https://github.com/Toiniot2-Wakayama/Japan-Open/blob/main/20230110_BLACK_MAIN.c  target="_blank" rel="noopener noreferrer">コチラ</a>。<br>
             <br>
             <pre>
-#include "D_Main.h"
-#include "D_I2C.h"
-#include "D_SIO.h"
-#include "D_EIO.h"
+<p class = prGray>#include</p> <p class = prRed>"D_Main.h"</p>
+<p class = prGray>#include</p> <p class = prRed>"D_I2C.h"</p>
+<p class = prGray>#include</p> <p class = prRed>"D_SIO.h"</p>
+<p class = prGray>#include</p> <p class = prRed>"D_EIO.h"</p>
 
-<h4 class = memo>//ココから定数の定義</h4>
-#define MOTOR_MAX 85
-#define MOTOR_MIN 25
+<p class = memo>ココから定数の定義</p>
+<p class = prGray>#define</p> <p class = prPurple>MOTOR_MAX 85</p>
+<p class = prGray>#define</p> <p class = prPurple>MOTOR_MIN 25</p>
 -中略-
-#define KEEPER_FRONT 10
-#define KEEPER_BACK_TIME 1000
-#define KEEPER_BACK_TIMELIMIT 5000
-#define DIF_LR 100
-#define KEEPER_BALL_FAR_MEDIUM 875
-#define KEEPER_BALL_MEDIUM_NEAR 1000
+<p class = prGray>#define</p> <p class = prPurple>KEEPER_FRONT 10</p>
+<p class = prGray>#define</p> <p class = prPurple>KEEPER_BACK_TIME 1000</p>
+<p class = prGray>#define</p> <p class = prPurple>KEEPER_BACK_TIMELIMIT 5000</p>
+<p class = prGray>#define</p> <p class = prPurple>DIF_LR 100</p>
+<p class = prGray>#define</p> <p class = prPurple>KEEPER_BALL_FAR_MEDIUM 875</p>
+<p class = prGray>#define</p> <p class = prPurple>KEEPER_BALL_MEDIUM_NEAR 1000</p>
 
-<h4 class = memo>//ココから変数の定義</h4>
-int m0;
-int m1;
-int m2;
-int m3;
-int lm0;
-int lm1;
-int lm2;
-int lm3;
-int inm0;
-int inm1;
-int inm2;
-int inm3;
-int lastMotion[6];
-int motionLongFlag;
-int difMotor;
-int disMotor;
-int backStop;
+<p class = memo>ココから変数の定義</p>
+<p class = prBlue>int</p> m0;
+<p class = prBlue>int</p> m1;
+<p class = prBlue>int</p> m2;
+<p class = prBlue>int</p> m3;
+<p class = prBlue>int</p> lm0;
+<p class = prBlue>int</p> lm1;
+<p class = prBlue>int</p> lm2;
+<p class = prBlue>int</p> lm3;
+<p class = prBlue>int</p> inm0;
+<p class = prBlue>int</p> inm1;
+<p class = prBlue>int</p> inm2;
+<p class = prBlue>int</p> inm3;
+<p class = prBlue>int</p> lastMotion[6];
+<p class = prBlue>int</p> motionLongFlag;
+<p class = prBlue>int</p> difMotor;
+<p class = prBlue>int</p> disMotor;
+<p class = prBlue>int</p> backStop;
 -中略-
-int subFlag;
+<p class = prBlue>int</p> subFlag;
 
--中略-
+<h4 class = memo>変数と定数を組み合わせたセンサ値取得関数</h4>
+<p class = prBlue>int</p> <p class = prYellow>refreshSensor</p>(<p class = prBlue>int</p> <p class = prGray>sensortype</p>, <p class = prBlue>int</p> <p class = prGray>ballfardetect</p>) {
 
-<h4 class = memo>//ココからメイン関数</h4>
-void user_main(void) {
+    <p class = prPurple>switch</p> (<p class = prGray>sensortype</p>) {
+    <p class = prPurple>case</p> 0:
+        lowQuantity = 0;
 
-    lm0 = 0;
-    lm1 = 0;
-    lm2 = 0;
-    lm3 = 0;
+        highIndex = 0;
+        highValue = gAD[highIndex];
 
-    for (i = 0; i < 6; i++) {
-        lastMotion[i] = 0;
-    }
+        <h4 class = memo>しきい値 (定数) より小さいセンサ値なら (変数に個数を記録)</h4>
+        <p class = prPurple>if</p> (highValue < <p class = prPurple>BALL_LOW</p>) {
+            lowQuantity += 1;
+        }
+
+        <p class = prPurple>for</p> (b = 0; b < 7; b++) {
+
+            comparingValue = gAD[b + 1];
+
+            <p class = prPurple>if</p> (comparingValue < <p class = prPurple>BALL_LOW</p>) {
+                lowQuantity += 1;
+            }
+
+            <p class = prPurple>if</p> (comparingValue > highValue) {
+                highIndex = b + 1;
+                highValue = comparingValue;
+            }
+        }
 
 -後略-          </pre>
             <br>
