@@ -1,0 +1,266 @@
+@charset "UTF-8";
+
+.lead{
+    width: 60%;
+    margin: 5% auto 2.5% auto;
+    padding: 5%;
+
+    font-family: Alata, Noto Sans JP, sans-serif;
+    font-weight: normal;
+
+    background-color: #f7f7f8;
+
+    border-radius: 25px;
+
+    filter: drop-shadow(5px 5px 10px silver);
+
+    transform: scale(1);
+    transition: all .3s;
+}
+
+.lead:hover{
+    transform: scale(1.02);
+}
+
+.lead > h3{
+    font-size: 7.5rem;
+    font-family: JetBrains Mono, Noto Sans JP, monospace;
+    font-weight: 800;
+    color: #f7a80a;
+
+    background-color: #191e31;
+
+    padding: 2%;
+    margin-bottom: 4%;
+    line-height: 2;
+
+    border-radius: 10px;
+}
+
+.lead>h3::before{
+    content: '003 | printf(" ';
+
+    position: relative;
+    bottom: 1.5vh;
+
+    font-size: 2.7rem;
+    color: #ffffff;
+}
+
+.lead>h3::after{
+    content: ' ");';
+
+    position: relative;
+    bottom: 1.5vh;
+
+    font-size: 2.7rem;
+    color: #ffffff;
+}
+
+.lead p{
+    line-height: 1.8;
+    font-size: 1.8rem;
+}
+
+.lead p a{
+    color: #1c1c1d;
+    text-decoration: underline #f7a80a 5px;
+}
+
+.lead p a::before, .lead p a::after{
+    content: " ";
+}
+
+.category-articles{
+    display: block;
+    width: 70%;
+    margin: 5% auto 2% auto;
+    padding: 0;
+}
+
+.category-articles h2{
+    display: inline-block;
+    margin: 0;
+
+    text-align: center;
+    line-height: 2.5;
+    font-family: Alata, Noto Sans JP, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+
+    border-radius: 25px;
+
+    background-color: #ddd;
+
+    border-radius: 10px 10px 0 0;
+
+
+    transform: scale(1);
+    transition: all .3s;
+
+    cursor: pointer
+}
+
+.category-articles h2:nth-child(1){
+    width: 8em;
+}
+
+.category-articles h2:nth-child(2){
+    width: 8em;
+}
+
+.category-articles h2:nth-child(3){
+    width: 4em;
+}
+
+.category-articles h2:nth-child(4){
+    width: 5.5em;
+}
+
+.category-articles h2:nth-child(5){
+    width: 4em;
+}
+
+.category-articles h2:nth-child(6){
+    width: 4em;
+}
+
+.category-articles h2:nth-child(7){
+    width: 6em;
+}
+
+.category-articles h2.current{
+    background-color: #f7a80a;
+
+    width: 10em;
+}
+
+.category-articles .category{
+    display: none;
+
+    width: 94%;
+    margin: 0 auto;
+    padding: 2% 3%;
+
+    font-family: Alata, Noto Sans JP, sans-serif;
+    font-weight: normal;
+
+    background-color: #f7f7f8;
+
+    border-radius: 0 20px 20px 20px;
+    filter: drop-shadow(5px 5px 10px silver);
+}
+
+.category-articles .category.active{
+    display: grid;
+    gap: 0;
+    grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
+}
+
+.category-articles .category:not(:has(a))::after{
+    content: "No Contents...";
+
+    display: inline-block;
+    width: 100%;
+
+    font-size: 2rem;
+    text-align: center;
+}
+
+.category a{
+    color: #1c1c1d;
+    text-decoration: none;
+
+    width: 90%;
+    margin: 2% auto;
+    padding: 0;
+
+    background-color: #f7f7f8;
+
+    border-radius: 25px;
+
+    filter: drop-shadow(5px 5px 10px silver);
+
+    transform: scale(1);
+    transition: all .3s;
+}
+
+.category a:hover{
+    transform: scale(1.02);
+}
+
+.category a article{
+    width: 100%;
+}
+
+article img{
+    width: 100%;
+    object-fit:contain;
+
+    margin: 0;
+
+    border-radius: 25px;
+
+    filter: grayscale(1);
+
+    transition: all .3s;
+}
+
+article:hover img{
+    filter: grayscale(0);
+}
+
+article h5{
+    display: inline-block;
+
+    padding: 2% 5% 4% 5%;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.link-to-latest{
+    text-decoration: none;
+    color: #1c1c1d;
+}
+
+.link-to-latest-h3{
+    display: block;
+    width: 60%;
+    margin: 5% auto 2.5% auto;
+    padding: 2% 5%;
+
+    font-family: Alata, Noto Sans JP, sans-serif;
+    font-weight: normal;
+
+    background-color: #bed555;
+
+    border-radius: 25px;
+
+    filter: drop-shadow(5px 5px 10px silver);
+
+    transform: scale(1);
+    transition: all .3s;
+
+    color: #1c1c1d;;
+    text-decoration: none;
+    font-size: 2.3rem;
+    text-align: center;
+}
+
+.link-to-latest-h3:hover{
+    transform: scale(1.02);
+}
+/*==================================================*/
+
+/*==================================================*/
+/*タブレット用*/
+@media screen and (max-width: 959px){
+
+}
+/*==================================================*/
+
+/*==================================================*/
+/*スマホ用*/
+@media screen and (max-width: 480px){
+}
+/*==================================================*/
