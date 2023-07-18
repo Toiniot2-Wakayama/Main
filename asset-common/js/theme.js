@@ -41,14 +41,4 @@ $(window).scroll(function (){
 
 $(window).on('load', function() {
     PageTopAnime();
-    var memo;
-    memo =
-`・サムネイル画像は必ず縦横比4:9で揃えること
-・記事ページの下部にハートマークのボタンを設け、押された数だけいいねがつく
-・プロフィールページにTwitterとGitHubのアカウントへのリンクを貼付すること
-・インデックスぺージの最新記事で5本または6本記事を並べると下の「次の記事へ」ボタンなどの位置がずれる
-
-From asset-common/js/theme.js`;
-
-    alert(memo);
 })
