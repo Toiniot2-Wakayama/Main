@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--メタ要素-->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <meta name="description" contnt="">
+
+        <!--ページタイトル-->
+        <title>Contact | TOINIOT² Blog</title>
+
+        <!--ファビコン設定-->
+        <link rel="apple-touch-icon" sizes="180x180" href="../../asset-common/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../asset-common/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../asset-common/favicon/favicon-16x16.png">
+        <link rel="manifest" href="../../asset-common/favicon/site.webmanifest">
+        <link rel="mask-icon" href="../../asset-common/favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+        <!--リセットcssの読み込み-->
+        <link href="../../asset-common/css/EricMeyersResetCSS.css" rel="stylesheet">
+
+        <!--自作cssの読み込み-->
+        <link href="../../asset-common/css/theme.css" rel="stylesheet">
+        <link href="./asset/css/detail.css" rel="stylesheet">
+        <link href="./asset/css/additional.css" rel="stylesheet">
+
+        <!--googleFontsの読み込み-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alata&family=Comfortaa:wght@600;700&family=JetBrains+Mono:wght@300;800&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+        <!--FontAwesome（アイコン）のjsの読み込み-->
+        <script src="https://kit.fontawesome.com/2cd68e5bc6.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <!--==================================================-->
+        <!--共通部分 ココカラ-->
+        <div class="sidebar">
+            <div class="openbtn">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div id="blackover"></div>
+
+        <nav id="menu">
+            <ul>
+                <li><h3>Navigation</h3></li>
+                <li id="nav1"><a href="../../index.html"><span>Home</span><span>ホーム</span></a></li>
+                <li id="nav2"><a href="../profile/profile.html"><span>Profile</span><span>プロフィール</span></a></li>
+                <li id="nav3"><a href="../../index.html#latest"><span>Latest</span><span>最新記事</span></a></li>
+                <li id="nav4"><a href="../category/category.html"><span>Category</span><span>カテゴリ別</span></a></li>
+                <li id="nav5"><a href="#"><span>Contact</span><span>お手紙を送る</span></a></li>
+                <li id="nav6"><a href="../link/link.html"><span>Link</span><span>リンク集</span></a></li>
+            </ul>
+        </nav>
+        <div class="circle-bg"></div>
+
+        <main>
+            <header>
+                <a href="../../index.html"><h1>TOINIOT²&nbsp;Blog</h1></a>
+            </header>
+            
+            <span class="header-line"></span>
+            <!--共通部分 ココマデ-->
+            <!--==================================================-->
+
+            <div class="url-leveling">
+                <a href="../../index.html">TOP</a>Contact
+            </div>
+
+            <form id="fs-frm" name="survey-form" accept-charset="utf-8" action="https://formspree.io/f/xdovpazd" method="POST">
+                <p id="required">*</p><p id="notice">&nbsp;は必須の項目です。</p>
+
+                <fieldset id="fs-frm-inputs">
+                    <div class="form-name">
+                        <label id="label-name">お名前</label>
+                        <input type="text" name="name" id="full-name" required>
+                    </div>
+                    
+                    <div class="form-email">
+                        <label id="label-email-address">メールアドレス</label>
+                        <input type="email" name="_replyto" id="email-address" placeholder="example@example.com" required>
+                    </div>
+                    
+                    <fieldset id="fs-frm-selects">
+                        <label id="label-select">ブログ内のどのページについてですか？</label>
+                        <select name="select" id="select" required>
+                            <option value="" selected disabled>以下から選択</option>
+                            <option value="1">記事（下に記事のタイトルを入力してください）</option>
+                            <option value="2">トップページ</option>
+                            <option value="3">最新記事一覧（トップページ内）</option>
+                            <option value="4">プロフィールページ</option>
+                            <option value="5">カテゴリ別記事一覧</option>
+                            <option value="6">コンタクトページ（このページ）</option>
+                            <option value="7">リンク集ページ</option>
+                            <option value="8">指定なし・その他</option>
+                        </select>
+                    </fieldset>
+                    
+                    <div class="form-articletitle">
+                        <label id="label-articletitle">記事タイトル</label>
+                        <input type="text" name="articletitle" id="articletitle">
+                    </div>
+                    
+                    <label id="label-message">コメント</label><br>
+                    <textarea rows="8" name="message" id="message" placeholder="" required></textarea>
+                    <input type="hidden" name="_subject" id="email-subject" value="Survey Responses">
+                </fieldset>
+                <input id="submit" type="submit" value="送信">
+
+                <p id="notice-2">このフォームは Formspree を使用しています。</p>
+            </form>
+
+            <!--==================================================-->
+            <!--共通部分 ココカラ-->
+            <p id="page-top"><a href="#"><i class="fa-solid fa-angle-up"></i></a></p>
+
+            <footer>
+                <p>Copyright &copy; 2023 TOINIOT²</p>
+            </footer>
+        </main>
+        <!--共通部分 ココマデ-->
+        <!--==================================================-->
+        
+        <!--jQueryと自作jsの読み込み-->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity = "sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin = "anonymous"></script>
+        <script src="../../asset-common/js/theme.js"></script>
+        <script src="./asset/js/detail.js"></script>
+        <script src="./asset/js/additional.js"></script>
+    </body>
+</html>
