@@ -169,7 +169,7 @@ td{
     padding: 1vh;
 }
 
-a, a:visited{
+.article-main a, .article-main a:visited{
     color: #c70640;
     font-weight: 500;
     font-size: 1.9rem;
