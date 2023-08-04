@@ -169,6 +169,12 @@ td{
     padding: 1vh;
 }
 
+a, a:visited{
+    color: #c70640;
+    font-weight: 500;
+    font-size: 1.9rem;
+}
+
 #zoomback {
     /* 絶対位置に配置 */
     position: fixed;
