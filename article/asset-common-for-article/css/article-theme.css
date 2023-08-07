@@ -92,14 +92,10 @@
     transition: all .3s;
 }
 
-.article-main:hover{
-    transform: scale(1.02);
-}
-
 .article-main img{
     display: block;
     
-    background-color: #f7a80a;
+    background-color: #f7f7f8;
 
     border-radius: 10px;
 
