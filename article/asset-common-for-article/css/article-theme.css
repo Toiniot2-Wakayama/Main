@@ -220,5 +220,45 @@ td{
 /*==================================================*/
 /*スマホ用*/
 @media screen and (max-width: 480px){
+    .article-lead{
+        width: 70%;
+        margin: 2.5% auto 2.5% auto;
+        padding: 5%;
+
+        border-radius: 15px;
+    }
+    
+    .article-lead:hover{
+        transform: scale(1);
+    }
+    
+    .article-lead h3{
+        font-size: 4rem;
+
+        border-radius: 10px;
+    }
+    
+    .article-lead p{
+        font-size: 2rem;
+    }
+    
+    .article-main{
+        width: 65%;
+        margin: 2.5% auto 2.5% auto;
+        padding: 3% 7.5%;
+
+        font-size: 2rem;
+    }
+    
+    .article-main .right, .article-main .left, .article-main .middle{
+        float: none;
+        margin: 2rem auto 2rem auto;
+    }
+    
+    .article-main a, .article-main a:visited{
+        color: #c70640;
+        font-weight: 500;
+        font-size: 2.5rem;
+    }
 }
 /*==================================================*/
