@@ -194,8 +194,10 @@ td{
 }
 
 #zoomimg {
-    width: 70%;
-    border: solid 5px #fff;
+    width: 80%;
+    height: 90%;
+    border-radius: 1.5rem;
+    object-fit: contain;
 }
 
 .deka {
