@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--メタ要素-->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+        <!--ページタイトル-->
+        <title>TOINIOT² Blog | 基板ったら基板。Yay!</title>
+
+        <!--ファビコン設定-->
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../asset-common/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../asset-common/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../asset-common/favicon/favicon-16x16.png">
+        <link rel="manifest" href="../../../asset-common/favicon/site.webmanifest">
+        <link rel="mask-icon" href="../../../asset-common/favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+        <!--リセットcssの読み込み-->
+        <link href="../../../asset-common/css/EricMeyersResetCSS.css" rel="stylesheet">
+
+        <!--自作cssの読み込み-->
+        <link href="../../../asset-common/css/theme.css" rel="stylesheet">
+        <link href="../..//asset-common-for-article/css/article-theme.css" rel="stylesheet">
+        <link href="./asset/css/detail.css" rel="stylesheet">
+        <link href="./asset/css/additional.css" rel="stylesheet">
+
+        <!--googleFontsの読み込み-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alata&family=Comfortaa:wght@600;700&family=JetBrains+Mono:wght@300;800&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+        <!--FontAwesome（アイコン）のjsの読み込み-->
+        <script src="https://kit.fontawesome.com/2cd68e5bc6.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <!--==================================================-->
+        <!--共通部分 ココカラ-->
+        <div class="sidebar">
+            <div class="openbtn">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div id="blackover"></div>
+
+        <nav id="menu">
+            <ul>
+                <li><h3>Navigation</h3></li>
+                <li id="nav1"><a href="../../../index.html"><span>Home</span><span>ホーム</span></a></li>
+                <li id="nav2"><a href="../../../main/profile/profile.html"><span>Profile</span><span>プロフィール</span></a></li>
+                <li id="nav3"><a href="../../../index.html#latest"><span>Latest</span><span>最新記事</span></a></li>
+                <li id="nav4"><a href="../../../main/category/category.html"><span>Category</span><span>カテゴリ別</span></a></li>
+                <li id="nav5"><a href="../../../main/contact/contact.html"><span>Contact</span><span>お手紙を送る</span></a></li>
+                <li id="nav6"><a href="../../../main/link/link.html"><span>Link</span><span>リンク集</span></a></li>
+            </ul>
+        </nav>
+        <div class="circle-bg"></div>
+
+        <main>
+            <header>
+                <a href="../../../index.html"><h1>TOINIOT²&nbsp;Blog</h1></a>
+            </header>
+
+            <span class="header-line"></span>
+            <!--共通部分 ココマデ-->
+            <!--==================================================-->
+            
+            <div class="url-leveling">
+                <a href="../../../index.html">TOP</a>基板ったら基板。Yay!
+            </div>
+
+            <div class="article-lead">
+                <h3>基板ったら基板。Yay!
+
+                </h3>
+                <p>
+                    
+                </p>
+                <p class="article-date">2023-11-21&emsp;Writer:&nbsp;NearFactory & 010</p>
+            </div>
+
+            <p class="article-main">
+                遂に!&nbsp;待ちに待ったボールセンサ基板の登場です!<br>
+                今回は、ボールセンサ基板、モータードライバ基板、キッカー基板を発注したことについての記事です。ぜひ見ていってください。<br>
+                今回の基板もJLCPCB様に発注させていただきました。JLCPCB様、ありがとうございます!<br>
+                <br>
+                それでは早速、本題の発注した基板の紹介から参りましょう!<br>
+                今回発注した<br>
+                　・ボールセンサ基板<br>
+                　・モータードライバ基板<br>
+                　・キッカー基板<br>
+                の順に紹介していきます。<br><br>
+                <strong>1.&nbsp;ボールセンサ基板</strong><br>
+                <img style="width: 100%; height: 20rem;" class="center zoom" src="./images/ball.jpg">
+                今回発注したボールセンサ基板は、チーム初挑戦の4層基板で発注させていただきました。<br><br>
+                「4層基板ってなぁに?」<br>
+                4層基板とは、基本となる表裏の2層の銅箔に加え、その表裏の間の基板の内層と呼ばれる部分にもう2層銅箔を加え、合計4層の銅箔を使用している基板のことをいいます(厳密性は無視させてください)。<br><br>
+                初めは2層基板での設計を行っていたのですが、真ん中の部分をカメラを使用するために大きく肉抜きしなければならず、PCB設計時に配線が余りにも難しいことから4層基板に挑戦しました。<br>
+                結論から言います。ぶっちゃけ4層基板の必要性はそこまでありません。<br>
+                4層基板とは言っても、内層には部品を置くことができず、配線をひいたりベタのパターンを作成したりするしか使い道がありません。なので、RCJのサッカー競技であれば、よほどの高度な技術を使用したりしない限りは、基本的に2層基板での設計で事足りるのではないか、という結論に至りました。<br>
+                もちろん、4層基板は内層に電源とGNDのベタパターンを広くとることができるので、ノイズ対策としては効果的かもしれません。そういった目的で4層基板を設計するのはアリなのではないかとおもいます。<br>
+                この4層基板、先述した通り他基板と同じくJLCPCB様に発注させていただいたのですが、1つだけ問題点がありました。それは<br>
+                「マイクロビアが使用できない」<br>
+                という点です。JLCPCBの生産する基板は品質もよく、生産ミスを見たことがないのですが、JLCPCBでは「マイクロビア」を使用した設計は現在受け付けていないそうです（2023.11.21時点）。<br><br>
+                　「マイクロビアってなぁに?」<br>
+                　マイクロビアとは、4層以上の基板に使用されることがある、一般の表層から裏層までを貫通するビアを異なり、表層から内層1まで、や内層1から内層2まで、のような基板を貫通しないビアのことです。<br><br>
+                私の設計していた基板はマイクロビアを使用していたので、発注していざ生産、というときに「マイクロビアできないよ」というメールを頂き、再注文という形を取らせていただきました。<br>
+                しかし、JLCPCBでは、4層基板を生産する際、その品質を高品質に保つため「4-Wire Kelvin Test」というテスティングを行うことを推奨しているそうです。追加の料金はかかりますが、これをやっておけば基板の品質が保たれるので、とても助かる提案だと思います。<br>
+                
+                <img style="width: 40rem; height: 20rem;" class="left zoom" src="./images/ball2.jpg">
+                ちなみに、このボールセンサ基板は私が設計したのですが、一番のこだわりポイントは裏面のチップ抵抗・チップコンデンサの集合部分です。ここでは、16コあるボールセンサのそれぞれのシグナルをローパスフィルタを通して高周波のノイズを除去しています。ここめっちゃ大変だった。うん。マジで。<br><br>
+                
+                <strong>2.&nbsp;モータードライバ基板</strong><br>
+                <img style="width: 100%; height: 20rem;" class="center zoom" src="./images/md.jpg">
+                モータードライバ基板。私たちは今回 TB6612FNG というMDをを使用しました。このMDは電流値が小さいのでRCJにはあまり向かないMDですが、モーターの選定に気を付ければ使うことは十分可能だといえるMDです。<br>
+                さて、このモータードライバ基板なのですが...、実は到着後基板とにらめっこをしているうちにあることに気が付きました。それは...<br><br>
+                設　・　計　・　ミ　・　ス<br><br>
+                このことに気づいた私は、すぐに設計した回路図とPCBエディタ上の基板を見比べ、最終的には空中配線を1本行ってなんとかやり過ごしました。<br><br>
+                設計ミス、ダメ。ゼッタイ。<br>
+                <br>
+                とまぁ冗談で言ったりしていますけれども、案外設計ミスから学べる事って多いですね。これまでは一度設計した基板を改めて見つめなおす機会がなかったものの、1つ基板に設計ミスが見つかると「本当に他にミスがないか?」と血眼になって探すものです。そうすると「ここはこの設計よりもこっちに直した方がいいかもな」「この配線もっと太くした方がいいかな」「ここはんだしにくいから部品配置変えようかな」などと様々な構想が湧き出てきます。存外、設計ミスも馬鹿にならないものですね。まぁ基盤を再発注する手間を考えるとそれでもトントンとは言えないですが...。<br>
+                さて、紆余曲折ありましたが、なんとか完成したモータードライバを使用してモーターを回してみると...<br><br>
+                回　・　ら　・　な　・　い<br><br>
+                私は首をかしげました。なんで??? 基板のミスは全て完璧に直したはずだしなぁ、となるとミスは...<br>
+                プログラム？<br>
+                そこでプログラムを見てみると...<br>
+                <img style="width: 40rem; height: 20rem;" class="right zoom" src="./images/md_program.jpg">
+                「あった! ミスあった!」<br>
+                なんと、analogWriteのfrequency (周波数) の数を256にしていたのです!（入力範囲:0-255）<br>
+                これを直して見ると...「動いた、うごいた!!!!!」<br>
+                最後までひやひやしましたが、なんとか動かすことができたモータードライバ基板でした。<br><br>
+
+                <strong>3.&nbsp;キッカー基板</strong><br>
+                <img style="width: 100%; height: 20rem;" class="center zoom" src="./images/kicker.jpg">
+                高級感のある黒!<br>
+                美しい金属メッキ!<br>
+                よし、レビュー完了!(๑•̀ㅂ•́)و✧<br>
+                <br>
+                すみません冗談です。真面目にレビューします。<br>
+                僕たちのチームのロボットのキッカー基板は、6.6V出力のバッテリーが詰まれています。ということは、モーターやCPUは少し調圧すればすぐに動かすことができます。しかしそうはいかないのがキッカー。ボールをパーン!って前に押し出してカッコよく(?)ゴールを決めるための気候ですね。もしこれを7.2Vで動かそうもんなら..<br>
+                ......コン......。<br>
+                で終わります。ゴールなんで夢のまた夢です。では、どうすればうまくいくのか...。
+                電圧を挙げてキッカーの威力を強くすればいい(≧∇≦)b
+                それをかなえるために必要なのが昇圧回路。正確にいうと昇圧自体を行うのは市販品として売っているもの（XL6009を使用）なんですが、それだけで使うことが難しいので、他のロボットの部品との接続コネクタや安全装置を設置するために基板を設計しました。<br>
+                ここまで長々とキッカー基板の必要性について話してきましたが、ここからが本題。なんでその基板をJLCPCB様に発注したのか。主な理由は2つあります。<br>
+                <br>
+                1. 確実性<br>
+                これは他の基板にも言えることではありますが、シンプルにミスがないんです。JLCPCB様と出会うまで、僕たちはエッチングという方法で基板を自作していました。しかしまぁ、本当に失敗が多い。今までいったいどれだけの銅板を無駄にしてきたのか....<br>
+                それに比べ、JLCPCB様から届いた基板に欠陥品が混じっていたことは一度もありません。届いたものが確実に使える。これ、地味に聞こえるかもしれませんが、結構重要なことなんです。<br>
+                <br>
+                2. 安全性<br>
+                1と繋がってくる部分はあるかと思いますが、ロボットを作る上でこれだけは譲れないのではないでしょうか。特にショートはダメージ大です。ショート発生箇所はもちろんのこと、その周辺もろとも まっくろくろすけ にしてしまいます。最悪の場合、ロボットの全解体、部品の大がかりな再発注に至る可能性も。それらを避けるためにもやはりリアルな炎上は避けたいところ。そのためにもっとも必要なのが、電気系統をしっかりしておくことです。<br>
+                たとえば、大電流が流れるところは配線を太くする、回路設計を間違えないなど。しかし仮にこれらを完璧にクリアしていても、必ずしもうまくいくとは限りません。なぜなら、害虫はもちろん、自作でもエッチング液につけてしまえば見守るしかない。「印刷」の工程で不備が出てきてしまったとき、その箇所を特定するのはおろか、発見することすらできない可能性があります。そしてこの基板を手に入れるまでの一連の流れの中で、もっとも信頼性が必要な部分を安全かつ確実に進めてくれるのだJLCPCB様、というわけです。<br>
+                <br>
+                <br>
+                ここまで長々と書いてしまいましたが、言いたいことはただひとつ。JLCPCB様、ありがとうございました。そして、次回もよろしくお願いします!<br>
+                では、今日はこの辺で。<br>
+                最後まで読んでいただきありがとうございました。また次の記事でお会いしましょう!<br><br>
+                <img style="width: 40%; cursor: auto; float: none;" class="left" src="./images/JLCPCB_logo.png">
+                ↓&nbsp;JLCPCB様のホームページはこちらから<br>
+                <a href="https://jlcpcb.com" target="_blank" rel="noopener noreferrer">https://jlcpcb.com/</a><br>
+                ↓&nbsp;今ならクーポンゲットのチャンス！<br>
+                <a href="https://jlcpcb.com/JPV" target="_blank" rel="noopener noreferrer">https://jlcpcb.com/JPV</a><br>
+                <br>
+                JLCPCBでは、今回使わせていただいた基板製造以外にも、前回紹介した3Dプリント、CNCフライスを用いた金属加工など、様々なサービスを行っています。<br>
+                気になる方はHPをチェック！<br>
+                今回のボールセンサ基板では4層基板を発注しましたが、JLCPCBでは最大で20層基板まで対応しているそうです! また、PCBAサービスも高品質で最高です! ぜひ試してみてください!<br>
+            </p>
+
+            <div id = "zoomback">
+                <img id = "zoomimg" src = "">
+            </div>
+
+            <!--==================================================-->
+            <!--共通部分 ココカラ-->
+            <p id="page-top"><a href="#"><i class="fa-solid fa-angle-up"></i></a></p>
+
+            <footer>
+                <p>Copyright &copy; 2023 TOINIOT²</p>
+            </footer>
+        </main>
+        <!--共通部分 ココマデ-->
+        <!--==================================================-->
+        
+        <!--jQueryと自作jsの読み込み-->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity = "sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin = "anonymous"></script>
+        <script src="../../../asset-common/js/theme.js"></script>
+        <script src="../../asset-common-for-article/js/article-theme.js"></script>
+        <script src="./asset/js/detail.js"></script>
+        <script src="./asset/js/additional.js"></script>
+    </body>
+</html>
