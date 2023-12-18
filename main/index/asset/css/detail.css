@@ -177,10 +177,6 @@
     color: #1c1c1d;
 }
 
-.grid-article .link-to-art:nth-of-type(n+7){
-    display: none;
-}
-
 .grid-article .link-to-art article{
     display: flex;
     flex-direction: column;
@@ -426,6 +422,7 @@
 
     .grid-article{
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 0;
     }
     
     .grid-article .link-to-art article{
