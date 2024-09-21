@@ -1,367 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!--メタ要素-->
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <head prefix="og: https://toiniot2-wakayama.github.io/Main/">
+    <!--メタ要素-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-        <!--ページタイトル-->
-        <title>TOINIOT² Blog</title>
+    <!--ページタイトル-->
+    <title>TOINIOT² Blog</title>
 
-        <!--ファビコン設定-->
-        <link rel="apple-touch-icon" sizes="180x180" href="./asset-common/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="./asset-common/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="./asset-common/favicon/favicon-16x16.png">
-        <link rel="manifest" href="./asset-common/favicon/site.webmanifest">
-        <link rel="mask-icon" href="./asset-common/favicon/safari-pinned-tab.svg" color="#5bbad5">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="theme-color" content="#ffffff">
+    <!--ファビコン設定-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./asset-common/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./asset-common/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./asset-common/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./asset-common/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./asset-common/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
-        <!--リセットcssの読み込み-->
-        <link href="./asset-common/css/EricMeyersResetCSS.css" rel="stylesheet">
+    <!--リセットcssの読み込み-->
+    <link href="./asset-common/css/EricMeyersResetCSS.css" rel="stylesheet">
 
-        <!--自作cssの読み込み-->
-        <link href="./asset-common/css/theme.css" rel="stylesheet">
-        <link href="./main/index/asset/css/detail.css" rel="stylesheet">
-        <link href="./main/index/asset/css/additional.css" rel="stylesheet">
+    <!--自作cssの読み込み-->
+    <link href="./asset-common/css/theme.css" rel="stylesheet">
+    <link href="./main/index/asset/css/detail.css" rel="stylesheet">
+    <link href="./main/index/asset/css/additional.css" rel="stylesheet">
 
-        <!--googleFontsの読み込み-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Alata&family=Comfortaa:wght@600;700&family=JetBrains+Mono:wght@300;800&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <!--googleFontsの読み込み-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Comfortaa:wght@600;700&family=JetBrains+Mono:wght@300;800&family=Noto+Sans+JP&display=swap" rel="stylesheet">
 
-        <!--FontAwesome（アイコン）のjsの読み込み-->
-        <script src="https://kit.fontawesome.com/2cd68e5bc6.js" crossorigin="anonymous"></script>
-    </head>
+    <!--FontAwesome（アイコン）のjsの読み込み-->
+    <script src="https://kit.fontawesome.com/2cd68e5bc6.js" crossorigin="anonymous"></script>
 
-    <body>
-        <!--==================================================-->
-        <!--共通部分 ココカラ-->
-        <div class="sidebar">
-            <div class="openbtn">
-                <span></span>
-                <span></span>
-            </div>
-        </div>
+    <!-- ページのデスクリプション -->
+    <meta name="description" content="RCJ-Soccer-Lightweight TOINIOT² Blog">
+    <meta property="og:url" content="https://toiniot2-wakayama.github.io/Main/"/>
+    <meta property="og:title" content="RCJ-Soccer-Lightweight TOINIOT² Blog"/>
+    <meta property="og:description" content="Robo Cup Junior Soccer競技 Lightweight部門に 和歌山県立桐蔭高等学校科学部 から出場している TOINIOT² のチームブログです。ロボット制作関連の技術や、生み出した進捗などを共有していきたいという思いから始まったこのブログ。 不定期更新なので、暇なときにアクセスしてみてください!"/>
+    <meta property="og:site_name" content="TOINIOT² Blog"/>
+    <meta property="og:image" content="https://toiniot2-wakayama.github.io/Main/asset-common/favicon/android-chrome-512x512.png"/>
+  </head>
 
-        <div id="blackover"></div>
+  <body>
+    <!--==================================================-->
+    <!--共通部分 ココカラ-->
+    <div class="sidebar">
+      <div class="openbtn">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
 
-        <nav id="menu">
-            <ul>
-                <li><h3>Navigation</h3></li>
-                <li id="nav1"><a href="#"><span>Home</span><span>ホーム</span></a></li>
-                <li id="nav2"><a href="./main/profile/profile.html"><span>Profile</span><span>プロフィール</span></a></li>
-                <li id="nav3"><a href="#latest"><span>Latest</span><span>最新記事</span></a></li>
-                <li id="nav4"><a href="./main/category/category.html"><span>Category</span><span>カテゴリ別</span></a></li>
-                <li id="nav5"><a href="./main/contact/contact.html"><span>Contact</span><span>お手紙を送る</span></a></li>
-                <li id="nav6"><a href="./main/link/link.html"><span>Link</span><span>リンク集</span></a></li>
-            </ul>
-        </nav>
-        <div class="circle-bg"></div>
+    <div id="blackover"></div>
 
-        <main>
-            <header>
-                <a href="./index.html"><h1>TOINIOT²&nbsp;Blog</h1></a>
-            </header>
+    <nav id="menu">
+      <ul>
+        <li><h3>Navigation</h3></li>
+        <li id="nav1"><a href="#"><span>Home</span><span>ホーム</span></a></li>
+        <li id="nav2"><a href="./main/profile/profile.html"><span>Profile</span><span>プロフィール</span></a></li>
+        <li id="nav3"><a href="#latest"><span>Latest</span><span>最新記事</span></a></li>
+        <li id="nav4"><a href="./main/category/category.html"><span>Category</span><span>カテゴリ別</span></a></li>
+        <li id="nav5"><a href="./main/contact/contact.html"><span>Contact</span><span>お手紙を送る</span></a></li>
+        <li id="nav6"><a href="./main/link/link.html"><span>Link</span><span>リンク集</span></a></li>
+      </ul>
+    </nav>
 
-            <span class="header-line"></span>
-            <!--共通部分 ココマデ-->
-            <!--==================================================-->
-            
-            <div class="url-leveling">
-                TOP
-            </div>
+    <div class="circle-bg"></div>
 
-            <div class="lead">
-                <h3>Hello, World!</h3>
-                <p>
-                    こんにちは。RCJ Soccer <strong>TOINIOT²</strong> のブログです。<br>
-                    ロボット製作の技術的なことからメンバーの日常生活まで、様々なことを発信する...したいです。<br>
-                    定期更新します。&emsp;...ヤッパリ&nbsp;デキナイ&nbsp;カモ&nbsp;シレナイ&nbsp;デス。<br>
-                    <br>
-                    見出しの&nbsp;Hello, World!&nbsp;は、自分たちの手で、新しいものが&nbsp;"Hello, World!"&nbsp;と次々に「世界にこんにちは」できるように開発していきたいという思いでつけました。<br>
-                </p>
-            </div>
+    <main>
+      <header>
+          <a href="./index.html"><h1>TOINIOT²&nbsp;Blog</h1></a>
+      </header>
 
-            <a href="./main/profile/profile.html" class="profile">
-                <p>Go To Team Profile&emsp;<i class="fa-solid fa-arrow-right-long"></i></p>
-                <img src="./main/index/images/profile.jpg">
-            </a>
-
-            <h3 class="article-lead" id="latest">Latest Articles&emsp;|&emsp;最新記事</h3>
-
-            <div class="grid-article" id="grid-article">
-
-                <a href="./article/2024/0916/2024-0916.html" class="link-to-art">
-                    <article id="art1">
-                      <img src="./article/2024/0916/images/3.jpg" alt="ラインセンサ!!">
-                      <h5>ラインセンサ!!</h5>
-                      <p id="art1-p">
-                        こんにちは。今回はラインセンサ基板をJLCPCB様に発注させていただきました。いつもありがとうございます。
-                      </p>
+      <span class="header-line"></span>
+      <!--共通部分 ココマデ-->
+      <!--==================================================-->
       
-                      <div class="tagset">
-                          <div class="tag hard">ハードウェア</div>
-                      </div>
-                  </article>
-                </a>
-              
-              <a href="./article/2024/0825/2024-0825.html" class="link-to-art">
-                  <article id="art1">
-                    <img src="./article/2024/0825/images/3.jpg" alt="き・ば・ん☆">
-                    <h5>き・ば・ん☆</h5>
-                    <p id="art1-p">
-                      こんにちは。今回も前回に続き基板を頼ませていただきました。ロボットを彩る!?基板がいっぱい‼JLCPCB様いつもありがとうございます。
-                    </p>
-    
-                    <div class="tagset">
-                        <div class="tag hard">ハードウェア</div>
-                    </div>
-                </article>
-              </a>
-              
-              <a href="./article/2024/0805/2024-0805.html" class="link-to-art">
-                  <article id="art1">
-                    <img src="./article/2024/0805/images/3.jpg" alt="基板ー‼">
-                    <h5>基板ー‼</h5>
-                    <p id="art1-p">
-                      こんにちは。今回は前々回に続き基板を頼ませていただきました。ロボットの要となるメイン基板も‼JLCPCB様ありがとうございます。
-                    </p>
-  
-                    <div class="tagset">
-                        <div class="tag hard">ハードウェア</div>
-                    </div>
-                </article>
-              </a>
-             
-              <a href="./article/2024/0630/2024-0630.html" class="link-to-art">
-                  <article id="art1">
-                    <img src="./article/2024/0630/images/3.jpg" alt="ボディ爆誕！">
-                    <h5>ボディ爆誕！</h5>
-                    <p id="art1-p">
-                      こんにちは。今回も基板…ではなく3DプリントをJLCPCB様に頼ませていただきました。ありがとうございます！
-                    </p>
-  
-                    <div class="tagset">
-                        <div class="tag hard">ハードウェア</div>
-                    </div>
-                </article>
-              </a>
+      <div class="url-leveling">
+          TOP
+      </div>
 
-              <a href="./article/2024/0608/2024-0608.html" class="link-to-art">
-                  <article id="art1">
-                    <img src="./article/2024/0608/images/3.jpg" alt="基板！">
-                    <h5>基板！</h5>
-                    <p id="art1-p">
-                      こんにちは。また基板頼ませていただきました。今回はなんと3種類。JLCPCB様いつもありがとうございます！
-                    </p>
+      <div class="lead">
+        <h3>Hello, World!</h3>
+        <p>
+          こんにちは。RCJ Soccer <strong>TOINIOT²</strong> のブログです。<br>
+          ロボット製作の技術的なことからメンバーの日常生活まで、様々なことを発信する...したいです。<br>
+          定期更新します。&emsp;...ヤッパリ&nbsp;デキナイ&nbsp;カモ&nbsp;シレナイ&nbsp;デス。<br>
+          <br>
+          見出しの&nbsp;Hello, World!&nbsp;は、自分たちの手で、新しいものが&nbsp;"Hello, World!"&nbsp;と次々に「世界にこんにちは」できるように開発していきたいという思いでつけました。<br>
+        </p>
+      </div>
 
-                    <div class="tagset">
-                        <div class="tag hard">ハードウェア</div>
-                    </div>
-                </article>
-              </a>
+      <a href="./main/profile/profile.html" class="profile">
+        <p>Go To Team Profile&emsp;<i class="fa-solid fa-arrow-right-long"></i></p>
+        <img src="./main/index/images/profile.jpg">
+      </a>
 
+      <h3 class="article-lead" id="latest">Latest Articles&emsp;|&emsp;最新記事</h3>
 
-              <a href="./article/2024/0519/2024-0519.html" class="link-to-art">
-                    <article id="art1">
-                        <img src="./article/2024/0519/images/2.jpg" alt="全国大会のふり返り">
-                        <h5>全国大会のふり返り</h5>
-                        <p id="art1-p">
-                          こんにちは！今回は全国大会のふり返り記事です。本当に遅くなりました。本当に。文章自体は3月に書いたものなんで許してください。
-                        </p>
-  
-                        <div class="tagset">
-                            <div class="tag note">雑記</div>
-                        </div>
-                    </article>
-              </a>
+      <div class="grid-article" id="grid-article">
 
-              <a href="./article/2024/0518/2024-0518.html" class="link-to-art">
-                  <article id="art1">
-                    <img src="./article/2024/0518/images/3.jpg" alt="基板基板！">
-                    <h5>基板基板！</h5>
-                    <p id="art1-p">
-                      こんにちは！今回はJLCPCB様に基板発注をさせてもらったお話。来年度に向けた電源基板とキッカー基板を頼ませていただきました。
-                    </p>
+        <a href="./article/2024/0916/2024-0916.html" class="link-to-art">
+          <article id="art1">
+            <img src="./article/2024/0916/images/3.jpg" alt="ラインセンサ!!">
+            <h5>ラインセンサ!!</h5>
+            <p id="art1-p">
+              こんにちは。今回はラインセンサ基板をJLCPCB様に発注させていただきました。いつもありがとうございます。
+            </p>
 
-                    <div class="tagset">
-                        <div class="tag hard">ハードウェア</div>
-                    </div>
-                </article>
-              </a>
-              
-              <a href="./article/2024/0228/2024-0228.html" class="link-to-art">
-                  <article id="art1">
-                      <img src="./article/2024/0228/images/thumbnail.jpg" alt="基板、きちゃ!">
-                      <h5>基板、きちゃ!</h5>
-                      <p id="art1-p">
-                        こんにちは！今回は電源基板のことについてのお話です。電源基板は人体に例えるなら心臓のようなものでロボットにはなくてはならない大切なものです。そのような大事な基盤を毎度お馴染みJLCPCB様(以下敬称略)に製造して頂きました。では一旦JLCPCBについてお話させて頂きます。JLCPCBは主に基板製作を手掛けている会社ですが3Dプリント、CNC加工なども行っているため様々なニーズに答えてくれます。そしてなんといっても一番私達にとって嬉しいのはJLCPCBの作る製品は安く正確でしかもそれを早く提供してくれるところです。私達が参加しているRCJでは場所により差はありますがノード大会、ブロック大会、全国大会これらすべてが約3ヶ月で開催されます。
-                      </p>
-
-                      <div class="tagset">
-                          <div class="tag hard">ハードウェア</div>
-                      </div>
-                  </article>
-              </a>
-
-              <a href="./article/2024/0129/2024-0129.html" class="link-to-art">
-                  <article id="art1">
-                      <img src="./article/2024/0129/images/thumbnail.jpg" alt="基板更新!">
-                      <h5>基板更新!</h5>
-                      <p id="art1-p">
-                          毎度おなじみJLCPCB様に基板を頼ませてもらったお話(いつもお世話になっております)。今回はモータードライバーとラインセンサの基板を注文させていただきました。詳細の説明の前にまずはJLCPCB様について。JLCPCBは主に基板製作を手掛けている会社です。しかし、それだけではなく。3DプリントやCNC加工なども行っており、彼らに作れないものはない！と言っても過言ではありません。そして、JLCPCB最大の特徴は「安い」「早い」「正確」の3拍子がそろっていること。商品自体は１＄から発注可能、工場は海外にあるのに、空輸とはいえ発注から2週間かからずでの到着はかなり魅力的です。
-                      </p>
-
-                      <div class="tagset">
-                          <div class="tag hard">ハードウェア</div>
-                      </div>
-                  </article>
-              </a>
-            
-                <a href="./article/2023/1212/2023-1212.html" class="link-to-art">
-                    <article id="art1">
-                        <img src="./article/2023/1212/images/thumbnail.jpg" alt="電源、大事、マジで。">
-                        <h5>電源、大事、マジで。</h5>
-                        <p id="art1-p">
-                            今回も前回に引き続き基盤発注のお話。注文先は毎度おなじみJLCPCB様です。はじめてTOINIOT²のブログを見てくれる方の中には、JLCPCB...?と思う人もいるかもしれませんので（いや、みんな知ってますよね！めっちゃ有名です！すごい企業です！（圧））ここで説明しておくと、JLCPCBは主に基板の製作をしている会社です。基板製作？っていう方は技術の授業を思い出してみてください。教科書の片隅に「エッチング」って載っていませんでしたか。そう、あれです。あれをもっと本格的にやってくれるのがJLCPCBというわけです。
-                        </p>
-
-                        <div class="tagset">
-                            <div class="tag hard">ハードウェア</div>
-                        </div>
-                    </article>
-                </a>
-                
-                <a href="./article/2023/1121/2023-1121.html" class="link-to-art">
-                    <article id="art1">
-                        <img src="./article/2023/1121/images/thumbnail.jpg" alt="基板ったら基板。Yay!">
-                        <h5>基板ったら基板。Yay!</h5>
-                        <p id="art1-p">
-                            遂に! 待ちに待ったボールセンサ基板の登場です! 今回は、ボールセンサ基板、モータードライバ基板、キッカー基板を発注したことについての記事です。ぜひ見ていってください。今回の基板もJLCPCB様に発注させていただきました。JLCPCB様、ありがとうございます!それでは早速、本題の発注した基板の紹介から参りましょう! 今回発注した ボールセンサ基板 モータードライバ基板 キッカー基板 の順に紹介していきます。1. ボールセンサ基板 今回発注したボールセンサ基板は、チーム初挑戦の4層基板で発注させていただきました。
-                        </p>
-
-                        <div class="tagset">
-                            <div class="tag hard">ハードウェア</div>
-                        </div>
-                    </article>
-                </a>
-                
-                <a href="./article/2023/0928/2023-0928.html" class="link-to-art">
-                    <article id="art1">
-                        <img src="./article/2023/0928/images/thumbnail.jpg" alt="おNewのきばん、きた。">
-                        <h5>おNewのきばん、きた。</h5>
-                        <p id="art1-p">
-                            前回の記事では3Dプリントについてでしたが、今回はJLCPCB様に基盤発注をさせていただいたお話です。早速、下の写真をご覧ください。1.メイン基板&nbsp;&nbsp;2.ラインセンサ基板&nbsp;&nbsp;今回発注させていただいたのは以上の2つです。まずはメイン基板。メイン基板はロボットにおいて最重要機関といっても過言ではありません。ボール・ラインセンサをはじめ、カメラ、ブザー、スイッチ等のUIなど、関係するものを挙げればきりがありません。なおかつそれをできる限り省スペースで、美しく()仕上げる必要があります。もしもそれらを
-                        </p>
-
-                        <div class="tagset">
-                            <div class="tag hard">ハードウェア</div>
-                        </div>
-                    </article>
-                </a>
-
-                <a href="./article/2023/0803/2023-0803.html" class="link-to-art">
-                    <article id="art1">
-                        <img src="./article/2023/0803/images/thumbnail.jpg" alt="JLCPCBからのお届け物です。">
-                        <h5>JLCPCBからのお届け物です。</h5>
-                        <p id="art1-p">
-                            こんにちは。TOINIOT²です。久しぶりの記事更新となってしまいましたが、中の人は生きています。もっと色々発信できるよう頑張ります！（毎回言ってる）さて、今回の記事は私たちのチームのスポンサーになっていただいているJLCPCB様に発注をさせてもらったお話です。今回は基板...ではなく、3Dプリント部品の発注をさせていただきました。基板の方は昨年から何度も発注させていただきお世話になりましたが、実は3Dプリントの部品を発注するのは初めてです。では、3Dプリント部品では一体何を発注したのか。それは...オムニホイールです。
-                        </p>
-
-                        <div class="tagset">
-                            <div class="tag hard">ハードウェア</div>
-                        </div>
-                    </article>
-                </a>
-
-                <a href="./article/2023/0715/2023-0715.html" class="link-to-art">
-                    <article id="art1">
-                        <img src="./article/2023/0715/images/thumbnail.jpg" alt="ブログ始めました。（2回目）">
-                        <h5>ブログ始めました。(2回目)</h5>
-                        <p id="art1-p">
-                            初めまして! こんにちは! 今日ようやくブログリニューアルかから第1回目の記事を投稿することができました。今日は伝えたいことが多いので早速。まず、今までブログ更新が遅れていたことについてのお詫びです。ブログ更新が遅れたこと、誠に申し訳ございませんでした。まさか最後の記事投稿から4か月経っても更新されないとは... こんなに筆の歩みが遅いブロガーは初めて見ました。（はい、当事者です。すみません）このままだと次に更新されるのは来年になりかねないので、ブログ更新を1か月に1回程度で定期的に行うように心がけたいと思います。
-                        </p>
-
-                        <div class="tagset">
-                            <div class="tag note">雑記</div>
-                        </div>
-                    </article>
-                </a>
-                <!--
-                <a href="./article/TransitionArticles/0329/2023-0329.html" class="link-to-art">
-                    <article id="art1">
-                        <img src="./article/TransitionArticles/0329/img1.JPG" alt="test1">
-                        <h5>
-                            2023 開発計画
-                        </h5>
-                        <p id="art1-p">
-                            来年こそ。Twitterのプロフィールにもある言葉です。（2023.03.28 20.29時点 コラ、ソコ! コロコロ変わるとかイワナイデ!）2022年度、私たちTOINIOT²は関西ブロック大会で4位という結果に終わり、全国大会への切符をつかむことが出来ませんでした。（関西大会でラウンドがひとつ消えてしまったとはいえ...ね?）ではどうするのか。2022年度のロボットをレビューするとおもに、次の大会ではどのような機体にしたいか、そしてしなければならないのか。
-                        </p>
-
-                        <div class="tagset">
-                            <div class="tag note">雑記</div>
-                            <div class="tag transition">移行記事</div>
-                        </div>
-                    </article>
-                </a>
-
-                <a href="./article/TransitionArticles/0124/2023-0124.html" class="link-to-art">
-                    <article id="art1">
-                        <img src="./article/TransitionArticles/0124/img1.jpg" alt="test1">
-                        <h5>
-                            定数のススメ
-                        </h5>
-                        <p id="art1-p">
-                            Q.プログラムを書くとき、値の記録をするにはどのような手段をとるか。多くの場合、答えは2択です。A.変数、または定数　プログラムの中で状況によって値が変化する変数に対し、定義した以降は一切変化しない定数。どちらのほうが使いやすいのでしょうか。この記事では、TOINIOT²のプログラム班が導き出した結論をお伝えします。まず初めに、それぞれの特徴を見ていきましょう。 〈変数と定数の特徴一覧表〉 プログラム班としては、「基本的に変数を使用するが、状況に応じて定数を使用する」のがベストアンサーだとけつろんづけました。
-                        </p>
-
-                        <div class="tagset">
-                            <div class="tag soft">ソフトウェア</div>
-                            <div class="tag transition">移行記事</div>
-                        </div>
-                    </article>
-                </a>
-
-                <a href="./article/TransitionArticles/0123/2023-0123.html" class="link-to-art">
-                    <article id="art1">
-                        <img src="./article/TransitionArticles/0123/img1.jpg" alt="test1">
-                        <h5>
-                            Hello, World!
-                        </h5>
-                        <p id="art1-p">
-                            こんにちは。RCJ Soccer LightWeight所属、TOINIOT²（トウインアイオットノニジョウ）です。この度、GitHubでホームページを開設しました。今後、少しずつだらだらと記事を更新して以降と思っています。RCJのハードとソフト両面から書ければと考えています。知識や技術の備忘録として書くこともあるので分かりにくいところもあるかと思いますが、暖かい目で見ていただけると嬉しいです。この記事では、TOINIOT²のチーム紹介をしています。良ければ見ていってください。
-                        </p>
-
-                        <div class="tagset">
-                            <div class="tag note">雑記</div>
-                            <div class="tag transition">移行記事</div>
-                        </div>
-                    </article>
-                </a>
-                -->
+            <div class="tagset">
+              <div class="tag hard">ハードウェア</div>
             </div>
+          </article>
+        </a>
+      
+      <a href="./article/2024/0825/2024-0825.html" class="link-to-art">
+        <article id="art1">
+          <img src="./article/2024/0825/images/3.jpg" alt="き・ば・ん☆">
+          <h5>き・ば・ん☆</h5>
+          <p id="art1-p">
+            こんにちは。今回も前回に続き基板を頼ませていただきました。ロボットを彩る!?基板がいっぱい‼JLCPCB様いつもありがとうございます。
+          </p>
 
-            <ul class="pagination">
-                <li><a class="disable"><i class="fa-solid fa-arrow-left"></i>&emsp;前のページへ</a></li>
-                <li><a class="disable" href="./index-2.html">次のページへ&emsp;<i class="fa-solid fa-arrow-right"></i></a></li>
-            </ul>
+          <div class="tagset">
+            <div class="tag hard">ハードウェア</div>
+          </div>
+        </article>
+      </a>
+      
+      <a href="./article/2024/0805/2024-0805.html" class="link-to-art">
+        <article id="art1">
+          <img src="./article/2024/0805/images/3.jpg" alt="基板ー‼">
+          <h5>基板ー‼</h5>
+          <p id="art1-p">
+            こんにちは。今回は前々回に続き基板を頼ませていただきました。ロボットの要となるメイン基板も‼JLCPCB様ありがとうございます。
+          </p>
 
-            <!--==================================================-->
-            <!--共通部分 ココカラ-->
-            <p id="page-top"><a href="#"><i class="fa-solid fa-angle-up"></i></a></p>
+          <div class="tagset">
+            <div class="tag hard">ハードウェア</div>
+          </div>
+        </article>
+      </a>
+      
+      <a href="./article/2024/0630/2024-0630.html" class="link-to-art">
+        <article id="art1">
+          <img src="./article/2024/0630/images/3.jpg" alt="ボディ爆誕！">
+          <h5>ボディ爆誕！</h5>
+          <p id="art1-p">
+            こんにちは。今回も基板…ではなく3DプリントをJLCPCB様に頼ませていただきました。ありがとうございます！
+          </p>
 
-            <footer>
-                <p>Copyright &copy; 2023 TOINIOT²</p>
-            </footer>
-        </main>
-        <!--共通部分 ココマデ-->
-        <!--==================================================-->
+          <div class="tagset">
+            <div class="tag hard">ハードウェア</div>
+          </div>
+        </article>
+      </a>
+
+      <a href="./article/2024/0608/2024-0608.html" class="link-to-art">
+        <article id="art1">
+          <img src="./article/2024/0608/images/3.jpg" alt="基板！">
+          <h5>基板！</h5>
+          <p id="art1-p">
+            こんにちは。また基板頼ませていただきました。今回はなんと3種類。JLCPCB様いつもありがとうございます！
+          </p>
+
+          <div class="tagset">
+            <div class="tag hard">ハードウェア</div>
+          </div>
+        </article>
+      </a>
+
+
+      <a href="./article/2024/0519/2024-0519.html" class="link-to-art">
+        <article id="art1">
+          <img src="./article/2024/0519/images/2.jpg" alt="全国大会のふり返り">
+          <h5>全国大会のふり返り</h5>
+          <p id="art1-p">
+            こんにちは！今回は全国大会のふり返り記事です。本当に遅くなりました。本当に。文章自体は3月に書いたものなんで許してください。
+          </p>
+
+          <div class="tagset">
+            <div class="tag note">雑記</div>
+          </div>
+        </article>
+      </a>
+
+      <a href="./article/2024/0518/2024-0518.html" class="link-to-art">
+        <article id="art1">
+          <img src="./article/2024/0518/images/3.jpg" alt="基板基板！">
+          <h5>基板基板！</h5>
+          <p id="art1-p">
+            こんにちは！今回はJLCPCB様に基板発注をさせてもらったお話。来年度に向けた電源基板とキッカー基板を頼ませていただきました。
+          </p>
+
+          <div class="tagset">
+            <div class="tag hard">ハードウェア</div>
+          </div>
+        </article>
+      </a>
+      
+      <a href="./article/2024/0228/2024-0228.html" class="link-to-art">
+        <article id="art1">
+          <img src="./article/2024/0228/images/thumbnail.jpg" alt="基板、きちゃ!">
+          <h5>基板、きちゃ!</h5>
+          <p id="art1-p">
+            こんにちは！今回は電源基板のことについてのお話です。電源基板は人体に例えるなら心臓のようなものでロボットにはなくてはならない大切なものです。そのような大事な基盤を毎度お馴染みJLCPCB様(以下敬称略)に製造して頂きました。では一旦JLCPCBについてお話させて頂きます。JLCPCBは主に基板製作を手掛けている会社ですが3Dプリント、CNC加工なども行っているため様々なニーズに答えてくれます。そしてなんといっても一番私達にとって嬉しいのはJLCPCBの作る製品は安く正確でしかもそれを早く提供してくれるところです。私達が参加しているRCJでは場所により差はありますがノード大会、ブロック大会、全国大会これらすべてが約3ヶ月で開催されます。
+          </p>
+
+          <div class="tagset">
+            <div class="tag hard">ハードウェア</div>
+          </div>
+        </article>
+      </a>
+
+      <a href="./article/2024/0129/2024-0129.html" class="link-to-art">
+        <article id="art1">
+          <img src="./article/2024/0129/images/thumbnail.jpg" alt="基板更新!">
+          <h5>基板更新!</h5>
+          <p id="art1-p">
+            毎度おなじみJLCPCB様に基板を頼ませてもらったお話(いつもお世話になっております)。今回はモータードライバーとラインセンサの基板を注文させていただきました。詳細の説明の前にまずはJLCPCB様について。JLCPCBは主に基板製作を手掛けている会社です。しかし、それだけではなく。3DプリントやCNC加工なども行っており、彼らに作れないものはない！と言っても過言ではありません。そして、JLCPCB最大の特徴は「安い」「早い」「正確」の3拍子がそろっていること。商品自体は１＄から発注可能、工場は海外にあるのに、空輸とはいえ発注から2週間かからずでの到着はかなり魅力的です。
+          </p>
+
+          <div class="tagset">
+            <div class="tag hard">ハードウェア</div>
+          </div>
+        </article>
+      </a>
+    
+        <a href="./article/2023/1212/2023-1212.html" class="link-to-art">
+          <article id="art1">
+            <img src="./article/2023/1212/images/thumbnail.jpg" alt="電源、大事、マジで。">
+            <h5>電源、大事、マジで。</h5>
+            <p id="art1-p">
+              今回も前回に引き続き基盤発注のお話。注文先は毎度おなじみJLCPCB様です。はじめてTOINIOT²のブログを見てくれる方の中には、JLCPCB...?と思う人もいるかもしれませんので（いや、みんな知ってますよね！めっちゃ有名です！すごい企業です！（圧））ここで説明しておくと、JLCPCBは主に基板の製作をしている会社です。基板製作？っていう方は技術の授業を思い出してみてください。教科書の片隅に「エッチング」って載っていませんでしたか。そう、あれです。あれをもっと本格的にやってくれるのがJLCPCBというわけです。
+            </p>
+
+            <div class="tagset">
+              <div class="tag hard">ハードウェア</div>
+            </div>
+          </article>
+        </a>
         
-        <!--jQueryと自作jsの読み込み-->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity = "sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin = "anonymous"></script>
-        <script src="./asset-common/js/theme.js"></script>
-        <script src="./main/index/asset/js/detail.js"></script>
-        <script src="./main/index/asset/js/additional.js"></script>
-    </body>
+        <a href="./article/2023/1121/2023-1121.html" class="link-to-art">
+          <article id="art1">
+            <img src="./article/2023/1121/images/thumbnail.jpg" alt="基板ったら基板。Yay!">
+            <h5>基板ったら基板。Yay!</h5>
+            <p id="art1-p">
+              遂に! 待ちに待ったボールセンサ基板の登場です! 今回は、ボールセンサ基板、モータードライバ基板、キッカー基板を発注したことについての記事です。ぜひ見ていってください。今回の基板もJLCPCB様に発注させていただきました。JLCPCB様、ありがとうございます!それでは早速、本題の発注した基板の紹介から参りましょう! 今回発注した ボールセンサ基板 モータードライバ基板 キッカー基板 の順に紹介していきます。1. ボールセンサ基板 今回発注したボールセンサ基板は、チーム初挑戦の4層基板で発注させていただきました。
+            </p>
+
+            <div class="tagset">
+              <div class="tag hard">ハードウェア</div>
+            </div>
+          </article>
+        </a>
+        
+        <a href="./article/2023/0928/2023-0928.html" class="link-to-art">
+          <article id="art1">
+            <img src="./article/2023/0928/images/thumbnail.jpg" alt="おNewのきばん、きた。">
+            <h5>おNewのきばん、きた。</h5>
+            <p id="art1-p">
+              前回の記事では3Dプリントについてでしたが、今回はJLCPCB様に基盤発注をさせていただいたお話です。早速、下の写真をご覧ください。1.メイン基板&nbsp;&nbsp;2.ラインセンサ基板&nbsp;&nbsp;今回発注させていただいたのは以上の2つです。まずはメイン基板。メイン基板はロボットにおいて最重要機関といっても過言ではありません。ボール・ラインセンサをはじめ、カメラ、ブザー、スイッチ等のUIなど、関係するものを挙げればきりがありません。なおかつそれをできる限り省スペースで、美しく()仕上げる必要があります。もしもそれらを
+            </p>
+
+            <div class="tagset">
+              <div class="tag hard">ハードウェア</div>
+            </div>
+          </article>
+        </a>
+
+        <a href="./article/2023/0803/2023-0803.html" class="link-to-art">
+          <article id="art1">
+            <img src="./article/2023/0803/images/thumbnail.jpg" alt="JLCPCBからのお届け物です。">
+            <h5>JLCPCBからのお届け物です。</h5>
+            <p id="art1-p">
+              こんにちは。TOINIOT²です。久しぶりの記事更新となってしまいましたが、中の人は生きています。もっと色々発信できるよう頑張ります！（毎回言ってる）さて、今回の記事は私たちのチームのスポンサーになっていただいているJLCPCB様に発注をさせてもらったお話です。今回は基板...ではなく、3Dプリント部品の発注をさせていただきました。基板の方は昨年から何度も発注させていただきお世話になりましたが、実は3Dプリントの部品を発注するのは初めてです。では、3Dプリント部品では一体何を発注したのか。それは...オムニホイールです。
+            </p>
+
+            <div class="tagset">
+              <div class="tag hard">ハードウェア</div>
+            </div>
+          </article>
+        </a>
+
+        <a href="./article/2023/0715/2023-0715.html" class="link-to-art">
+          <article id="art1">
+            <img src="./article/2023/0715/images/thumbnail.jpg" alt="ブログ始めました。（2回目）">
+            <h5>ブログ始めました。(2回目)</h5>
+            <p id="art1-p">
+              初めまして! こんにちは! 今日ようやくブログリニューアルかから第1回目の記事を投稿することができました。今日は伝えたいことが多いので早速。まず、今までブログ更新が遅れていたことについてのお詫びです。ブログ更新が遅れたこと、誠に申し訳ございませんでした。まさか最後の記事投稿から4か月経っても更新されないとは... こんなに筆の歩みが遅いブロガーは初めて見ました。（はい、当事者です。すみません）このままだと次に更新されるのは来年になりかねないので、ブログ更新を1か月に1回程度で定期的に行うように心がけたいと思います。
+            </p>
+
+            <div class="tagset">
+              <div class="tag note">雑記</div>
+            </div>
+          </article>
+        </a>
+      </div>
+
+      <ul class="pagination">
+          <li><a class="disable"><i class="fa-solid fa-arrow-left"></i>&emsp;前のページへ</a></li>
+          <li><a class="disable" href="./index-2.html">次のページへ&emsp;<i class="fa-solid fa-arrow-right"></i></a></li>
+      </ul>
+
+      <!--==================================================-->
+      <!--共通部分 ココカラ-->
+      <p id="page-top"><a href="#"><i class="fa-solid fa-angle-up"></i></a></p>
+
+      <footer>
+          <p>Copyright &copy; 2023 TOINIOT²</p>
+      </footer>
+    </main>
+    <!--共通部分 ココマデ-->
+    <!--==================================================-->
+    
+    <!--jQueryと自作jsの読み込み-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity = "sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin = "anonymous"></script>
+    <script src="./asset-common/js/theme.js"></script>
+    <script src="./main/index/asset/js/detail.js"></script>
+    <script src="./main/index/asset/js/additional.js"></script>
+  </body>
 </html>
