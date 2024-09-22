@@ -10,14 +10,14 @@
     margin: 5% auto 2.5% auto;
     padding: 2.5% 2.5%;
 
-    font-family: Alata, Noto Sans JP, sans-serif;
+    font-family: "Roboto", "Noto Sans JP", sans-serif;
     font-weight: normal;
 
     background-color: #f7f7f8;
 
     border-radius: 25px;
 
-    filter: drop-shadow(5px 5px 10px silver);
+    filter: drop-shadow(var(--backdropfilterDropShadow));
 
     transform: scale(1);
     transition: all .3s;
@@ -65,14 +65,14 @@
     margin: 5% auto 2.5% auto;
     padding: 2% 5%;
 
-    font-family: Alata, Noto Sans JP, sans-serif;
+    font-family: "Roboto", "Noto Sans JP", sans-serif;
     font-weight: normal;
 
     background-color: #bed555;
 
     border-radius: 25px;
 
-    filter: drop-shadow(5px 5px 10px silver);
+    filter: drop-shadow(var(--backdropfilterDropShadow));
 
     transform: scale(1);
     transition: all .3s;

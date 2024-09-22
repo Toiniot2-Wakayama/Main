@@ -32,7 +32,7 @@ form{
     transform: scale(1);
     transition: all .3s;
 
-    font-family: Comfortaa, Noto Sans JP, sans-serif;
+    font-family: "Roboto", "Noto Sans JP", sans-serif;
     color: #1c1c1d;
     text-decoration: none;
     font-size: 1.6rem;
@@ -56,7 +56,7 @@ form select{
 form #message{
     width: 90%;
 
-    font-family: Comfortaa, Noto Sans JP, sans-serif;
+    font-family: "Roboto", "Noto Sans JP", sans-serif;
     color: #1c1c1d;
     font-size: 1.7rem;
 
@@ -71,7 +71,7 @@ form #label-name::after, form #label-email-address::after, form #label-select::a
 form #submit{
     padding: 0.5% 2%;
 
-    font-family: Comfortaa, Noto Sans JP, sans-serif;
+    font-family: "Roboto", "Noto Sans JP", sans-serif;
 }
 
 #notice-2{

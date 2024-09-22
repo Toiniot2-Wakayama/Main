@@ -11,7 +11,7 @@
     margin: 5% auto 2.5% auto;
     padding: 5%;
 
-    font-family: Alata, Noto Sans JP, sans-serif;
+    font-family: "Roboto", "Noto Sans JP", sans-serif;
     font-weight: normal;
 
     background-color: #f7f7f8;
@@ -28,7 +28,7 @@
     font-weight: lighter;
 
     font-size: 7.5rem;
-    font-family: JetBrains Mono, Noto Sans JP, monospace;
+    font-family: "JetBrains Mono", "Noto Sans JP", monospace;
     font-weight: 800;
     color: #f7a80a;
 
@@ -93,7 +93,7 @@
     margin: 2.5% auto;
     padding: 2% 5%;
 
-    font-family: Alata, Noto Sans JP, sans-serif;
+    font-family: "Roboto", "Noto Sans JP", sans-serif;
     font-weight: normal;
 
     background-color: #f7f7f8;
@@ -145,7 +145,7 @@
     margin: 7.5% auto 2.5% auto;
     padding: 2% 5%;
 
-    font-family: Alata, Noto Sans JP, sans-serif;
+    font-family: "Roboto", "Noto Sans JP", sans-serif;
     font-weight: normal;
 
     background-color: #bed555;
@@ -166,61 +166,83 @@
 .grid-article{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-    gap: 4%;
+    grid-template-rows: auto;
+    gap: 4rem;
 
-    width: 60%;
-    margin: 2.5% auto;
+    width: 70%;
+    height: auto;
+
+    margin: auto;
 }
 
+/* .grid-article * {
+  border: red solid 1px;
+} */
+
 .grid-article .link-to-art{
-    text-decoration: none;
-    color: #1c1c1d;
+  display: block;
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  color: #222222;
+  text-decoration: none;
 }
 
 .grid-article .link-to-art article{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 
-    font-family: Alata, Noto Sans JP, sans-serif;
-    font-weight: normal;
+  font-family: "Roboto", "Noto Sans JP", sans-serif;
+  font-weight: normal;
 
-    background-color: #f7f7f8;
+  background-color: #f7f7f8;
 
-    border-radius: 25px;
+  border-radius: 25px;
 
-    filter: drop-shadow(var(--main-filter-dropshadow));
+  filter: drop-shadow(var(--main-filter-dropshadow));
 
-    transform: scale(1);
-    transition: all .3s;
+  transform: scale(1);
+  transition: all .3s;
 }
 
 .grid-article .link-to-art article img{
-    width: 90%;
-    object-fit:contain;
+  width: 90%;
+  object-fit:contain;
 
-    margin: 6% auto 3% auto;
+  margin: 6% auto 3% auto;
 
-    border-radius: 10px;
+  border-radius: 10px;
 
-    filter: grayscale(1);
+  filter: grayscale(1);
 
-    transition: all .3s;
+  transition: all .3s;
 }
 
 .grid-article .link-to-art article h5{
-    display: block;
-    margin: 1.5% 6%;
+  display: block;
+  width: calc(100% - 6rem);
+  height: 4rem;
 
-    font-weight: bold;
-    font-size: 2.5rem;
-    text-align: left;
+  margin: 0 auto;
+  padding: 0 3rem;
 
-    text-decoration: underline solid #f7a80a 7px;
-    text-underline-offset: 0.6rem;
+  color: #222222;
+  font-family: 'Roboto', 'Noto Sans JP', sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  
+  text-align: justify;
+  line-height: 4rem;
+  text-decoration: underline;
+  text-decoration-color: #f7a80a;
+  text-decoration-thickness: 7px;
+  text-underline-offset: 0.6rem;
 }
 
 .grid-article .link-to-art article p{
@@ -229,9 +251,19 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
 
-    font-size: 1.8rem;
+    width: calc(100% - 6rem);
+    height: calc(3rem * 3);
 
-    margin: 0 6% 2% 6%;
+    margin: 1rem auto;
+    padding: 0 3rem;
+
+    color: #222222;
+    font-weight: 400;
+    font-size: 1.75rem;
+    
+    text-align: justify;
+    line-height: 3rem;
+    text-decoration: none;
 }
 
 .grid-article .link-to-art article .tagset{
@@ -294,202 +326,122 @@
     background-color: #ccc;
 }
 
-.pagination{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3%;
-    width: 30%;
-    height: 5vh;
-    margin: 5% auto;
-    padding: 2% 5%;
-
-    font-family: Comfortaa, Noto Sans JP, sans-serif;
-    font-weight: normal;
-}
-
-.pagination a{
-    display: inline-block;
-    height: 6rem;
-    width: 25rem;
-
-    text-align: center;
-    line-height: 6rem;
-    text-decoration: none;
-    font-size: 2rem;
-    color: #ffffff;
-
-    transition: all .15s;
-
-    background-color: #f7a80a;
-
-    filter: drop-shadow(var(--main-filter-dropshadow));
-
-    cursor: pointer;
-
-    transform: scale(1);
-    transition: all .2s;
-}
-
-.pagination a.disable{
-    background-color: #aaa;
-    color: #ddd;
-    cursor: auto;
-
-    transform: scale(0.9);
-}
-
-.pagination li:nth-of-type(1) a{
-    border-radius: 30px 0 0 30px;
-}
-
-.pagination li:nth-of-type(2) a{
-    border-radius: 0 30px 30px 0;
-}
-
-.pagination .current{
-    width: 50px;
-    background-color: #f7f7f8;
-    color: #1c1c1d;
-}
-
 /*==================================================*/
 
 /*==================================================*/
 /*パソコンのみ（hover等）*/
-@media screen and (min-width: 960px){
-    .lead:hover{
-        transform: scale(1.02);
-    }
+@media (hover: hover){
+  .lead:hover{
+    transform: scale(1.02);
+  }
 
-    .lead p strong:hover{
-        width: 120px;
-    }
+  .lead p strong:hover{
+    width: 120px;
+  }
 
-    .profile:hover{
-        transform: scale(1.02);
-    }
+  .profile:hover{
+    transform: scale(1.02);
+  }
 
-    .profile:hover img{
-        opacity: 1;
-    }
+  .profile:hover img{
+    opacity: 1;
+  }
 
-    .grid-article .link-to-art article:hover{
-        transform: scale(1.02);
-    }
+  .grid-article .link-to-art article:hover{
+    transform: scale(1.02);
+  }
 
-    .grid-article .link-to-art:hover article img{
-        filter: grayscale(0);
-    }
-
-    .pagination a:hover{
-        transform: scale(1.04);
-    }
-    
-    .pagination a.disable:hover{
-        transform: scale(0.9);
-    }
+  .grid-article .link-to-art:hover article img{
+    filter: grayscale(0);
+  }
 }
 /*==================================================*/
 
-/*==================================================*/
-/*タブレット用*/
-@media screen and (max-width: 959px){
 
-}
-/*==================================================*/
+
+
+
+
+
+
+
 
 /*==================================================*/
 /*スマホ用*/
 @media screen and (max-width: 480px){
-    :root{
-        font-size: 5px;
+  :root{
+    font-size: 5px;
+  }
 
-        --main-filter-dropshadow: 2.5px 2.5px 5px silver;
-    }
+  .profile{
+      height: 4rem;
+  }
+  
+  .profile p{
+      line-height: 4rem;
+  }
+  
+  .profile img{
+      opacity: 0.7;
+  }
 
-    .profile{
-        height: 4rem;
-    }
-    
-    .profile p{
-        line-height: 4rem;
-    }
-    
-    .profile img{
-        opacity: 0.7;
-    }
+  .grid-article{
+      grid-template-columns: repeat(auto-fit, 100%);
+      gap: 4rem;
+  }
+  
+  .grid-article .link-to-art article{
+      border-radius: 15px;
+  }
 
-    .grid-article{
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 0;
-    }
-    
-    .grid-article .link-to-art article{
-        border-radius: 15px;
-    
-    }
+  .grid-article .link-to-art article img{
+      filter: grayscale(0);
+  }
 
-    .grid-article .link-to-art article img{
-        filter: grayscale(0);
-    }
+  .grid-article .link-to-art article h5{
+    font-family: 'Roboto', 'Noto Sans JP', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
 
-    .grid-article .link-to-art article h5{
-        text-decoration: underline solid #f7a80a 3px;
-        text-underline-offset: 0.6rem;
-    }
+    text-decoration: underline;
+    text-decoration-color: #f7a80a;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 0.8rem;
+  }
 
-    .grid-article .link-to-art article .hard{
-        /*ハードウェア*/
-        width: 14rem;
-    }
-    
-    .grid-article .link-to-art article .soft{
-        /*ソフトウェア*/
-        width: 14rem;
-    }
-    
-    .grid-article .link-to-art article .circuit{
-        /*回路*/
-        width: 7rem;
-    }
-    
-    .grid-article .link-to-art article .display{
-        /*表示/UI*/
-        width: 9rem;
-    }
-    
-    .grid-article .link-to-art article .days{
-        /*日常*/
-        width: 7rem;
-    }
-    
-    .grid-article .link-to-art article .note{
-        /*雑記*/
-        width: 7rem;
-    }
-    
-    .grid-article .link-to-art article .transition{
-        /*移行記事*/
-        width: 10rem;
-    }
-
-    .pagination{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 3%;
-        width: 30%;
-        height: 10rem;
-        margin: 5% auto;
-        padding: 2% 5%;
-    }
-
-    .pagination a{
-        height: 7rem;
-        width: 25rem;
-
-        line-height: 7rem;
-    }
+  .grid-article .link-to-art article .hard{
+    /*ハードウェア*/
+    width: 14rem;
+  }
+  
+  .grid-article .link-to-art article .soft{
+    /*ソフトウェア*/
+    width: 14rem;
+  }
+  
+  .grid-article .link-to-art article .circuit{
+    /*回路*/
+    width: 7rem;
+  }
+  
+  .grid-article .link-to-art article .display{
+    /*表示/UI*/
+    width: 9rem;
+  }
+  
+  .grid-article .link-to-art article .days{
+    /*日常*/
+    width: 7rem;
+  }
+  
+  .grid-article .link-to-art article .note{
+    /*雑記*/
+    width: 7rem;
+  }
+  
+  .grid-article .link-to-art article .transition{
+    /*移行記事*/
+    width: 10rem;
+  }
 }
 /*==================================================*/
