@@ -19,13 +19,13 @@ html, body{
 
     line-height: 1.7;
 
-    font-size: 62.5%;
+    font-size: 10px;
 }
 
 .sidebar{
     position: fixed;
     z-index: 9;
-    width: 7%;
+    width: 10rem;
     height: 100%;
 
     top: 0;
@@ -48,7 +48,7 @@ html, body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2%;
+    gap: 1.5rem;
 
     cursor: pointer;
 }
@@ -62,22 +62,22 @@ html, body{
     transition: all .4s;
     
     left: 0;
-    width: 30%;
-    height: 4px;
+    width: 4rem;
+    height: 3px;
 
     background-color: #eff1f4;
 
-    border-radius: 2px;
+    border-radius: 1.5px;
 }
 
 .openbtn.active span:nth-of-type(1){
-    transform: translateY(280%) rotate(-225deg);
-    width: 20%;
+    transform: translateY(calc(0.75rem + 1.5px)) rotate(-225deg);
+    width: 3rem;
 }
 
 .openbtn.active span:nth-of-type(2){
-    transform: translateY(-280%) rotate(225deg);
-    width: 20%;
+    transform: translateY(calc(-0.75rem - 1.5px)) rotate(225deg);
+    width: 3rem;
 }
 
 #blackover{
@@ -446,29 +446,29 @@ footer p{
     }
 
     .sidebar{
-        width: 10%;
+        width: 8rem;
         height: 100%;
     }
 
     .openbtn{
-        gap: 0.8%;
+        gap: 1rem;
     }
 
     .openbtn span{
-        width: 50%;
+        width: 4rem;
         height: 2px;
     
         border-radius: 1px;
     }
 
     .openbtn.active span:nth-of-type(1){
-        transform: translateY(200%) rotate(-225deg);
-        width: 40%;
+        transform: translateY(calc(0.5rem + 1px)) rotate(-225deg);
+        width: 3rem;
     }
     
     .openbtn.active span:nth-of-type(2){
-        transform: translateY(-200%) rotate(225deg);
-        width: 40%;
+        transform: translateY(calc(-0.5rem - 1px)) rotate(225deg);
+        width: 3rem;
     }
 
     .circle-bg{

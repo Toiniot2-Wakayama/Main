@@ -1,0 +1,266 @@
+@charset "UTF-8";
+
+.article-lead{
+    width: 60%;
+    margin: 2.5% auto 2.5% auto;
+    padding: 5%;
+
+    font-family: Alata, Noto Sans JP, sans-serif;
+    font-weight: normal;
+
+    background-color: #f7f7f8;
+
+    border-radius: 25px;
+
+    filter: drop-shadow(5px 5px 10px silver);
+
+    transform: scale(1);
+    transition: all .3s;
+}
+
+.article-lead:hover{
+    transform: scale(1.02);
+}
+
+.article-lead h3{
+    font-weight: lighter;
+
+    font-size: 4.5rem;
+    font-family: JetBrains Mono, Noto Sans JP, monospace;
+    font-weight: 800;
+    color: #f7a80a;
+
+    background-color: #191e31;
+
+    padding: 2%;
+    margin-bottom: 4%;
+    line-height: 2;
+
+    border-radius: 10px;
+}
+
+.article-lead h3::before{
+    content: '001 | printf(" ';
+
+    position: relative;
+    bottom: 0.5vh;
+
+    font-size: 2.7rem;
+    color: #ffffff;
+}
+
+.article-lead h3::after{
+    content: ' ");';
+
+    position: relative;
+    bottom: 0.5vh;
+
+    font-size: 2.7rem;
+    color: #ffffff;
+}
+
+.article-lead p{
+    line-height: 1.8;
+    font-size: 1.8rem;
+}
+
+.article-lead p.article-date{
+    display: block;
+
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.article-main{
+    width: 45%;
+    margin: 2.5% auto 2.5% auto;
+    padding: 3% 12.5%;
+
+    font-family: Alata, Noto Sans JP, sans-serif;
+    font-weight: normal;
+    font-size: 1.7rem;
+    line-height: 2;
+
+    background-color: #f7f7f8;
+
+    border-radius: 25px;
+
+    filter: drop-shadow(5px 5px 10px silver);
+
+    transform: scale(1);
+    transition: all .3s;
+}
+
+.article-main img{
+    display: block;
+    
+    background-color: #f7f7f8;
+
+    border-radius: 10px;
+
+    object-fit:cover;
+
+    cursor: pointer;
+}
+
+.article-main .right{
+    float: right;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+}
+
+.article-main .left{
+    float: left;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 2rem;
+}
+
+.article-main .middle{
+    float: none;
+    margin: 2rem auto 2rem auto;
+}
+
+.article-main table{
+    width: 100%;
+    margin: 4vh 0;
+    
+    padding: 1vh 1vw;
+
+    border-top: #413936 solid 2px;
+    border-bottom: #413936 solid 2px;
+}
+
+.article-main table caption{
+    text-align: justify;
+    margin-bottom: 1vh;
+}
+
+.br{
+    border-right: #413936 solid 1px;
+}
+
+.bl{
+    border-left: #413936 solid 1px;
+}
+
+.bt{
+    border-top: #413936 solid 1px;
+}
+
+.bb{
+    border-bottom: #413936 solid 1px;
+}
+
+th{
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+td{
+    font-size: 1.7rem;
+    text-align: center;
+    padding: 1vh;
+}
+
+.article-main a, .article-main a:visited{
+    color: #c70640;
+    font-weight: 500;
+    font-size: 1.9rem;
+}
+
+#zoomback {
+    /* 絶対位置に配置 */
+    position: fixed;
+    top: 0;
+    
+    /* 画面いっぱいに */
+    width: 100%;
+    height: 100%;
+    
+    /* 背景を少し透過 */
+    background-color: rgba(0,0,0,0.8);
+    
+    /* 中のimgを中央揃え */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    display: none;
+
+    cursor: pointer;
+}
+
+#zoomimg {
+    width: 80%;
+    height: 90%;
+    border-radius: 1.5rem;
+    object-fit: contain;
+}
+
+.deka {
+    animation: deka 0.5s;
+}
+
+@keyframes deka {
+    from {
+        transform: scale(0);
+    }
+}
+
+/*==================================================*/
+
+/*==================================================*/
+/*タブレット用*/
+@media screen and (max-width: 959px){
+
+}
+/*==================================================*/
+
+/*==================================================*/
+/*スマホ用*/
+@media screen and (max-width: 480px){
+    .article-lead{
+        width: 70%;
+        margin: 2.5% auto 2.5% auto;
+        padding: 5%;
+
+        border-radius: 15px;
+    }
+    
+    .article-lead:hover{
+        transform: scale(1);
+    }
+    
+    .article-lead h3{
+        font-size: 4rem;
+
+        border-radius: 10px;
+    }
+    
+    .article-lead p{
+        font-size: 2rem;
+    }
+    
+    .article-main{
+        width: 65%;
+        margin: 2.5% auto 2.5% auto;
+        padding: 3% 7.5%;
+
+        font-size: 2rem;
+    }
+    
+    .article-main .right, .article-main .left, .article-main .middle{
+        float: none;
+        margin: 2rem auto 2rem auto;
+    }
+    
+    .article-main a, .article-main a:visited{
+        color: #c70640;
+        font-weight: 500;
+        font-size: 2.5rem;
+    }
+}
+/*==================================================*/
