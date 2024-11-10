@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <!--メタ要素-->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+        <!--ページタイトル-->
+        <title>TOINIOT² Blog | ボディ-2-</title>
+
+        <!--ファビコン設定-->
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../asset-common/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../asset-common/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../asset-common/favicon/favicon-16x16.png">
+        <link rel="manifest" href="../../../asset-common/favicon/site.webmanifest">
+        <link rel="mask-icon" href="../../../asset-common/favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+        <!--リセットcssの読み込み-->
+        <link href="../../../asset-common/css/EricMeyersResetCSS.css" rel="stylesheet">
+
+        <!--自作cssの読み込み-->
+        <link href="../../../asset-common/css/theme.css" rel="stylesheet">
+        <link href="../..//asset-common-for-article/css/article-theme.css" rel="stylesheet">
+        <link href="./asset/css/detail.css" rel="stylesheet">
+        <link href="./asset/css/additional.css" rel="stylesheet">
+
+        <!--googleFontsの読み込み-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alata&family=Comfortaa:wght@600;700&family=JetBrains+Mono:wght@300;800&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+        <!--FontAwesome（アイコン）のjsの読み込み-->
+        <script src="https://kit.fontawesome.com/2cd68e5bc6.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <!--==================================================-->
+        <!--共通部分 ココカラ-->
+        <div class="sidebar">
+            <div class="openbtn">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div id="blackover"></div>
+
+        <nav id="menu">
+            <ul>
+                <li><h3>Navigation</h3></li>
+                <li id="nav1"><a href="../../../index.html"><span>Home</span><span>ホーム</span></a></li>
+                <li id="nav2"><a href="../../../main/profile/profile.html"><span>Profile</span><span>プロフィール</span></a></li>
+                <li id="nav3"><a href="../../../index.html#latest"><span>Latest</span><span>最新記事</span></a></li>
+                <li id="nav4"><a href="../../../main/category/category.html"><span>Category</span><span>カテゴリ別</span></a></li>
+                <li id="nav5"><a href="../../../main/contact/contact.html"><span>Contact</span><span>お手紙を送る</span></a></li>
+                <li id="nav6"><a href="../../../main/link/link.html"><span>Link</span><span>リンク集</span></a></li>
+            </ul>
+        </nav>
+        <div class="circle-bg"></div>
+
+        <main>
+            <header>
+                <a href="../../../index.html"><h1>TOINIOT²&nbsp;Blog</h1></a>
+            </header>
+
+            <span class="header-line"></span>
+            <!--共通部分 ココマデ-->
+            <!--==================================================-->
+            
+            <div class="url-leveling">
+                <a href="../../../index.html">TOP</a>ボディ-2-
+            </div>
+
+            <div class="article-lead">
+                <h3>ボディ-2-</h3>
+                <p>
+                    
+                </p>
+                <p class="article-date">2024-11-10&emsp;Writer:&nbsp;010</p>
+            </div>
+
+            <p class="article-main">
+                こんにちは。今回は4か月半ぶりに機体のボディを3Dプリントで頼ませていただきました。<br>
+                3DプリントをJLCPCB様に頼ませていただくメリットやボディの全体的な説明は以前<a href="https://toiniot2-wakayama.github.io/Main/article/2023/0803/2023-0803.html">こちら</a>でしたので、今回は僕たちがこのボディを設計する上で工夫したことなどを細かく話していきたいと思います。<br>
+                と、その前にまずはいつもお世話になっているJLCPCB様の紹介から。<br><br>
+
+                JLCPCBは主に基板製作を手掛けている会社です。しかし、それだけではなく、今回のような3DプリントやCNC加工なども行っており、彼らに作れないものはない！と言っても過言ではありません。<br>
+                そして、JLCPCB最大の特徴は「安い」「早い」「正確」の3拍子がそろっていること。
+                商品自体は1$から発注可能、工場は海外にあるのに、空輸とはいえ発注から2週間かからずでの到着はかなり魅力的です。<br>
+                しかもこの2週間とはあくまでも通常配達での話。速達サービスを使えば数日で届きます。1週間もかかりません。ここでもう一度言っておきます。
+                出荷元は海外です！日本ではありません‼凄すぎ…<br>
+                もちろん、確立された機械生産によって不良品に当たる可能性はほとんどなく、少なくても僕たちは一度も遭遇していません(僕たちの設計ミスはたくさんありましたが(笑))。 
+                あとそうそう、オペレーターの方がメールで注文内容について応対してくれるのも推しポイント!!
+                以前僕たちが頼ませていただいた基板の中に構造上貧弱になっている箇所があったのですが、このままでは危ないこと、解決策などを提案していただき事なきを得ました。 しかも全部無料で…!(*'▽')<br>
+                今ならクーポンもゲットできるみたいです。 この機会をお見逃しなく！！<br><br>
+
+                <img style="width: 40%; cursor: auto; float: none;" class="left" src="./images/JLCPCB_logo.png"><br>
+                ↓JLCPCB様のHP<br>
+                <a href="https://jlcpcb.jp/" target="_blank" rel="noopener noreferrer">https://jlcpcb.jp/</a><br>
+                ↓クーポンゲットのチャンス！<br>
+                ・新規ユーザー$60クーポン<br>
+                <a href="https://jlcpcb.com/JPV" target="_blank" rel="noopener noreferrer">https://jlcpcb.com/JPV</a><br>
+                ・その他のクーポン<br>
+                <a href="https://jlcpcb.jp/coupon-center?from=6layer" target="_blank" rel="noopener noreferrer">https://jlcpcb.jp/coupon-center?from=6layer</a><br>
+                <br>
+                <br>
+
+                さて、それでは本題に。<br><br>
+
+                <strong>1.&nbsp;圧倒的ナットレス</strong><br><img style="width: 25%; height: 40rem;" class="right zoom" src="./images/1.jpg">
+                普通ねじはナットを使用して固定しますが、何回も取り外しをする場合、ナットがロボットの内部に入り込んでしまうことがあります。
+                それだけではなく、ナットが床に落ちてそのままどこかへいってしまうことも…。試合中の修理など時間がシビアなときには本当にストレスですし、何より時間のロスが発生してしまいます。
+                また、それ以外にもねじの長さが微妙に足りずにより長いものを使う羽目になったりと、とにかく問題点が多い…!!そこで考えたのが「インサートナット」を使うこと。
+                いやナットやんって話ですが、少々特殊な代物で、これは言わば取り外しができないナット。
+                写真のような金属の部品を熱を利用してボディに埋め込むと、内部がねじ巻き状になっているのでナットの役割を果たしてくれます。
+                これだとナットがなくなったり、微妙な突起で車検に引っかかるようなこともゼロに!そして、これは従来のようなアルミ板を切り出した床板だとできません。
+                また、市販の3Dプリンタでもここまで大がかりなものを作るのは難しいので、JLCPCB様々。
+                <img style="width: 100%; height: 40rem;" class="right zoom" src="./images/2.jpg"><br><br>
+
+                <strong>2.&nbsp;完全分離</strong><br>
+                基本的にロボットのボディは1段目と2段目に分けることができます。
+                もちろんそれぞれにいろいろな部品がつくと思うのですが、なかにはそれらをまたぐちょい面倒なものも存在し、特にIOT²が頭を悩ましていたのが、2段目につきがちなモータードライバーと1段目につけるしかないモーターの扱い。
+                ロボットを修理しようと分解すると、そのたびにモーターの線を外さなければならず、しかも試合中には外れないようそこそこ固くしてあるので毎回苦労のオンパレードでした。
+                過去には力を入れすぎて断線が起きたこともあり…(モーターのプラグごと逝ったときは地獄だったな〜)。とにかくモータードライバーを1段目に移すことが求められていました。
+                それが今回、ライトウェイト4年目にしてついに実現したのです。
+                自作のモータードライバーとその機体のためだけに作られた専用のボディ、いずれも徹底的に省スペースで作られた2つを組み合わせることで、モーターとモーターの間に僅かながら基板を入れる隙間を生むことに成功しました。
+                ちなみにこれ以外に一切1,2段目をまたぐ部品がないのかと言われるとそういうわけではないのですが、せいぜいラインセンサとメイン基板を繋ぐフレキシブル基板(取り外しは超簡単)ぐらいなのでまあ問題ないでしょう。
+                <img style="width: 100%; height: 47rem;" class="right zoom" src="./images/4.jpg"><br><br>
+
+                <strong>3.&nbsp;1段目よりも下にあるラインセンサ</strong><br><img style="width: 55%; height: 40rem;" class="left zoom" src="./images/5.jpg">
+                ラインセンサはロボットの構造物の中で最も下にあり、なおかつサイズが一番大きい基板です。
+                何か不具合などが生じて取り外しが必要になると、ロボットを全解体する勢いでモーターやら何やらを取らなければなりません。
+                時間がかかるのはもちろん、上で話したようにモーターが断線する可能性も高まります。一番下にあるのであれば、ロボットの底側から外せるようにすればいいのでは…。
+                おそらく誰もが一度は考えたことでしょう。しかし、基板が出っ張ることのないように1段目の床板の上側に取り付けざるを負えず、また、IOT²の場合省スペースを実現するためいくつかの基板の穴を共用していたので気合ですり抜けさせるという荒業も使えませんでした。
+                ですがこれはあくまでも床板が平面だったときの話にすぎません。僕たちは床板が立体であることを生かし、1段目を2層構造に。
+                ご覧の通り、底面にくぼみをつけて、基板もすっぽりです。もちろんねじ穴もラインセンサ専用で、前述のインサートナットつきなので、僅か数十秒ほどで容易に基板をロボットから完全に切り離すことができるのです。
+                ちなみに、モータードライバーを1段目に置けたのは、このラインセンサを移動させられたのが一番大きい理由だったりもします。<br><br>
+
+                <strong>4.&nbsp;ボールを包み込む曲線を描いたくぼみ</strong><br>
+                <img style="width: 100%; height: 50rem;" class="right zoom" src="./images/6.jpg"><br>
+                今まではボールをホールドするロボット前方のくぼみは写真のような台形型でした。
+                しかしこれだとロボットとボールの間に隙間ができてしまうため、走行中にボールがぶれたり、キッカーの力が伝わりにくくなってしまいます。
+                くぼみをより小さくすればぶれはましになりますが、<img style="width: 65%; height: 40rem;" class="right zoom" src="./images/9.jpg">その場合より正確な動き、プログラムが求められるので一長一短でしょう。
+                
+                それらを解決するべく、ボールの形に沿った立体的なくぼみにした次第です。これもアルミ板だとなかなか難しいので、JLCPCB様の3Dプリントサービスがあってこそ実現したものだと思います。
+                あっ穴が3つ空いていると思いますが、真ん中はソレノイドがキーーック!!するところ、左右はいつキーーック!!するかを判断するボールセンサ用のものです。
+                <br><br>
+
+                <strong>5.&nbsp;ボディと一体化したバッテリーケース</strong><br>
+                ロボットにとってバッテリー、電源は「かなめ」である一方、ショートなどの重大なトラブルを起こす引き金になりかねません。
+                そのようなことを引き起こさないためにも、バッテリーの扱いには細心の注意が必要ですが、ロボットにしっかりと固定するというのは基本中の基本でありながらも極めて重要なことです。
+                以前は別パーツだったバッテリーケースをボディに一体化することで、ねじのゆるみなどが絶対に起きないようにしました。
+                また、別で作ったストッパーを使い、二重に外部からの衝撃や揺れへの対策も行っています。<br>
+                <img style="width: 45%; height: 35rem;" class="right zoom" src="./images/7.jpg">
+                <img style="width: 50%; height: 35rem;" class="left zoom" src="./images/8.jpg"><br><br><br><br>
+
+                今回は以上です。上記のポイントはいずれもJLCPCB様の3Dプリントサービスがあったからこそ実現できたもの。JLCPCB様、そしてこの記事を読んでくださった皆様、本当にありがとうございました。<br>
+                バイバイ!(*´∇`*)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+            </p>
+
+            <div id = "zoomback">
+                <img id = "zoomimg" src = "">
+            </div>
+
+            <!--==================================================-->
+            <!--共通部分 ココカラ-->
+            <p id="page-top"><a href="#"><i class="fa-solid fa-angle-up"></i></a></p>
+
+            <footer>
+                <p>Copyright &copy; 2023 TOINIOT²</p>
+            </footer>
+        </main>
+        <!--共通部分 ココマデ-->
+        <!--==================================================-->
+        
+        <!--jQueryと自作jsの読み込み-->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity = "sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin = "anonymous"></script>
+        <script src="../../../asset-common/js/theme.js"></script>
+        <script src="../../asset-common-for-article/js/article-theme.js"></script>
+        <script src="./asset/js/detail.js"></script>
+        <script src="./asset/js/additional.js"></script>
+    </body>
+</html>
