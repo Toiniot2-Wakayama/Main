@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <!--メタ要素-->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+        <!--ページタイトル-->
+        <title>TOINIOT² Blog | メイン基板-2-</title>
+
+        <!--ファビコン設定-->
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../asset-common/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../asset-common/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../asset-common/favicon/favicon-16x16.png">
+        <link rel="manifest" href="../../../asset-common/favicon/site.webmanifest">
+        <link rel="mask-icon" href="../../../asset-common/favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+        <!--リセットcssの読み込み-->
+        <link href="../../../asset-common/css/EricMeyersResetCSS.css" rel="stylesheet">
+
+        <!--自作cssの読み込み-->
+        <link href="../../../asset-common/css/theme.css" rel="stylesheet">
+        <link href="../..//asset-common-for-article/css/article-theme.css" rel="stylesheet">
+        <link href="./asset/css/detail.css" rel="stylesheet">
+        <link href="./asset/css/additional.css" rel="stylesheet">
+
+        <!--googleFontsの読み込み-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alata&family=Comfortaa:wght@600;700&family=JetBrains+Mono:wght@300;800&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+        <!--FontAwesome（アイコン）のjsの読み込み-->
+        <script src="https://kit.fontawesome.com/2cd68e5bc6.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <!--==================================================-->
+        <!--共通部分 ココカラ-->
+        <div class="sidebar">
+            <div class="openbtn">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div id="blackover"></div>
+
+        <nav id="menu">
+            <ul>
+                <li><h3>Navigation</h3></li>
+                <li id="nav1"><a href="../../../index.html"><span>Home</span><span>ホーム</span></a></li>
+                <li id="nav2"><a href="../../../main/profile/profile.html"><span>Profile</span><span>プロフィール</span></a></li>
+                <li id="nav3"><a href="../../../index.html#latest"><span>Latest</span><span>最新記事</span></a></li>
+                <li id="nav4"><a href="../../../main/category/category.html"><span>Category</span><span>カテゴリ別</span></a></li>
+                <li id="nav5"><a href="../../../main/contact/contact.html"><span>Contact</span><span>お手紙を送る</span></a></li>
+                <li id="nav6"><a href="../../../main/link/link.html"><span>Link</span><span>リンク集</span></a></li>
+            </ul>
+        </nav>
+        <div class="circle-bg"></div>
+
+        <main>
+            <header>
+                <a href="../../../index.html"><h1>TOINIOT²&nbsp;Blog</h1></a>
+            </header>
+
+            <span class="header-line"></span>
+            <!--共通部分 ココマデ-->
+            <!--==================================================-->
+            
+            <div class="url-leveling">
+                <a href="../../../index.html">TOP</a>メイン基板-2-
+            </div>
+
+            <div class="article-lead">
+                <h3>メイン基板-2-</h3>
+                <p>
+                    
+                </p>
+                <p class="article-date">2024-11-24&emsp;Writer:&nbsp;010</p>
+            </div>
+
+            <p class="article-main">
+                こんにちは。今回はJLCPCB様にメイン基板(改良ver.)を発注させてもらったお話。<br>
+                すでに初代が手元にあるのに、この基板のレビューした記憶ないなーと思って過去の記事さかのぼってたらありました。
+                フレキシブル基板の紹介に気を取られてたった数行で終わらした悪しき<a href="https://toiniot2-wakayama.github.io/Main/article/2024/0805/2024-0805.html">ブログ</a>が!!<br>
+                スミマセン…<br>
+                今日はちゃんと色々話していきますのでよろしければお付き合いください。<br>
+                と、その前に毎回お世話になっているJLCPCB様の紹介を…!<br>
+
+                JLCPCBは主に基板製作を手掛けている会社です。しかし、それだけではなく、3DプリントやCNC加工なども行っており、彼らに作れないものはない！と言っても過言ではありません。<br>
+                そして、JLCPCB最大の特徴は「安い」「早い」「正確」の3拍子がそろっていること。
+                商品自体は1$から発注可能、工場は海外にあるのに、空輸とはいえ発注から2週間かからずでの到着はかなり魅力的です。<br>
+                しかもこの2週間とはあくまでも通常配達での話。速達サービスを使えば数日で届きます。1週間もかかりません。ここでもう一度言っておきます。
+                出荷元は海外です！日本ではありません‼凄すぎ…<br>
+                もちろん、確立された機械生産によって不良品に当たる可能性はほとんどなく、少なくても僕たちは一度も遭遇していません(僕たちの設計ミスはたくさんありましたが(笑))。 
+                あとそうそう、オペレーターの方がメールで注文内容について応対してくれるのも推しポイント!!
+                以前僕たちが頼ませていただいた基板の中に構造上貧弱になっている箇所があったのですが、このままでは危ないこと、解決策などを提案していただき事なきを得ました。 しかも全部無料で…!(*'▽')<br>
+                今ならクーポンもゲットできるみたいです。 この機会をお見逃しなく！！<br><br>
+
+                <img style="width: 40%; cursor: auto; float: none;" class="left" src="./images/JLCPCB_logo.png"><br>
+                ↓JLCPCB様のHP<br>
+                <a href="https://jlcpcb.jp/" target="_blank" rel="noopener noreferrer">https://jlcpcb.jp/</a><br>
+                ↓クーポンゲットのチャンス！<br>
+                ・新規ユーザー$60クーポン<br>
+                <a href="https://jlcpcb.com/JPV" target="_blank" rel="noopener noreferrer">https://jlcpcb.com/JPV</a><br>
+                ・その他のクーポン<br>
+                <a href="https://jlcpcb.jp/coupon-center?from=6layer" target="_blank" rel="noopener noreferrer">https://jlcpcb.jp/coupon-center?from=6layer</a><br>
+                <br>
+                <br>
+
+                では本題へレッツゴー<br>
+
+                <img style="width: 47%; height: 40rem;" class="left zoom" src="./images/1.jpg">
+                <img style="width: 47%; height: 40rem;" class="right zoom" src="./images/2.jpg">
+
+                まずは上の写真をご覧ください。随分と形が違いますが、なんと両方とも「メイン基板」なんです。
+                左が昨年、右が今年のものなのですが、変化したところを順を追って説明していきます。<br><br>
+
+                <strong>1.&nbsp;ボールセンサ基板との合体</strong><br>
+                これが一番のポイントだと思います。以前はメイン基板といえば主にマイコンを乗せるためのものであり、ボールセンサはその上部に別物の基板としてつけていました。
+                しかし今年はこの2つを1つに。メイン基板からボールセンサ基板へとつながる配線がすべて基板内に集約され、見栄えが良くなったのはもちろんのこと、何よりメンテナンス性が格段に向上しました。
+                ライトウェイトを始めたころは、写真のようにセンサひとつひとつに線がつながっていたのでつけるのも外すのも時間がかかって仕方がなかった…去年はフラットケーブルと呼ばれるそれらが1つにまとまったものを使用しましたが、「線」である以上取り外しは必要ですしね(あとこの手の線は長さ調節が難しめなのが地味にきつい)…あとはメイン基板の上に来るものがカメラとハンドルのみになるので、カメラの配線を通すためにボールセンサ基板の形を調整しなくて済むのもけっこうありがたい。
+                大体はセンサ配置に沿った形にして、中央をくり抜けばうまくいくのですが、コネクタをつける場所とかを考えているとあれ…意外とスペースない!!なんてこともあるあるなので。<br>
+                <img style="width: 100%; height: 60rem;" class="right zoom" src="./images/3.jpg"><br><br>
+
+                <strong>2.&nbsp;UI基板の誕生</strong><br>
+                <img style="width: 55%; height: 72rem;" class="right zoom" src="./images/4.jpg">
+                どした急に関係ない基板出てくるやん、とツッコまれそうですが関係大アリ…!
+                先ほどはメイン基板に追加されたものの話をしましたが、実はなくなったものもあるんです。
+                それが操作に使うボタンやディスプレイなど。そしてそれらがまとめて取り付けられたのがUI基板、というわけです。
+                ついさっき基板類はまとめたほうが配線諸々楽だよ～といったばかりなのにもう矛盾するのか!
+                と思われる方もいらっしゃるかもしれませんが、もちろんこれには理由があり、それは、ボタンなのに押しづらい、ディスプレイなのに見づらいといったことをなくすため。
+                メイン基板はCPUをつかさどるロボットの中心。基本機体の中心に配置されます。
+                しかし広いコート上だとちょっと手が届きにくい、というなんとも致命的な欠陥が発生します。
+                そうならないために、操作関連に特化した基板を機体後方よりに配置することで、試合の時も落ち着いて、確実にロボットをスタートさせることができるのです。
+                この変更が結果的に、ボール関連のセンサ類を載せるゆとりを作ったとも考えられるので一石二鳥♪
+                <br><br>
+
+                <strong>3.&nbsp;CPU</strong><br><img style="width: 60%; height: 45rem;" class="left zoom" src="./images/5.jpg">
+                昨年はArduino Mega2560でしたが、今年はTeensy4.0になりました。
+                変更した理由としては、サイズが小さい、というのは大きかったかも。
+                上の写真を見てもらえるとわかるのですが、マイコンの形に沿うように線で縁取られています。
+                結構違いますよね。
+                あっ、ちなみにこのような基板に線や文字を入れることをシルクスクリーンと言って、JLCPCB様だとなんと無料で行ってくれるサービスになります。
+                どこに何をつなげばいいのかを明示するのはもちろん、こんな感じでチームのロゴを入れたりして基板をかっこよく仕上げることもできるのでぜひ一度やってみてください(追加料金なしっていいよね、ホント。)
+                <a href="https://toiniot2-wakayama.github.io/Main/article/2024/0805/2024-0805.html">こちら</a>の記事でも詳しく紹介しているのでよければご覧ください!<br><br><br>
+
+                
+
+                ここまでメイン基板の仕様についていろいろお話してきましたが、見ての通り本当に複雑な基板です。
+                当然どこか1ヶ所でもミスがあれば、ロボットの機能の大半を失うことになります。
+                1つにまとめたら配線楽だよ〜なんてことが気軽に言えるのも製造過程で失敗が起きない前提。
+                このようなことは絶対に自作の基板では成し遂げられません。JLCPCB様の技術があって初めて成り立つものです。
+                本当に感謝しなければなりませんね。<br>
+                さて、1ヶ月後にはRCJ和歌山ノード大会を迎えます。
+                私たちTOINIOT²最後のシーズン、いよいよスタート!寝屋川、名古屋で皆さんと会えるよう全力で戦います。
+                いくぞ、世界!!<br>
+                今回はここまで。<br>
+                最後まで読んでいただきありがとうございました。<br><br><br><br>
+
+                ps.<br>
+                <img style="width: 100%; height: 55rem;" class="right zoom" src="./images/6.jpg">
+                メイン基板についていろいろと話していたら電源基板ver.4について書くの忘れてました(バカ)<br>
+                まあ電源基板といえば毎回、ロボット一の大電流が流れる場所。絶対に失敗は許されないからこそJLCPCB様に発注しよう!と言っているのですが、今回は別の箇所に注目。
+                <img style="width: 55%; height: 55rem;" class="right zoom" src="./images/7.jpg">
+                写真を見ていただくと、「TEST」の文字が…!実はこれ、試合では使わない、その名の通り、実験のためのスペースなんです。
+                ロボットを作っていく中で、センサの動作チェックやモーターの動き具合を確かめるため、実際に試してみることも多いと思います。
+                回路はブレッドボードを使えば比較的容易に基板を再現できますが、ここで問題となるのが電源。
+                使用する部品によって適正電圧は決まっており、それこそモーターの9.6Vなんかは乾電池を繋げてもなかなか生み出せません。しかしこのテスト用の電源スペースがあれば、簡単に必要な電気を供給することができます。
+                こんな+αが実現するのもJLCPCB様に頼ませていただいたからこそですね(自作でそんなことしている余裕ない)(*'▽')<br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+            </p>
+
+            <div id = "zoomback">
+                <img id = "zoomimg" src = "">
+            </div>
+
+            <!--==================================================-->
+            <!--共通部分 ココカラ-->
+            <p id="page-top"><a href="#"><i class="fa-solid fa-angle-up"></i></a></p>
+
+            <footer>
+                <p>Copyright &copy; 2023 TOINIOT²</p>
+            </footer>
+        </main>
+        <!--共通部分 ココマデ-->
+        <!--==================================================-->
+        
+        <!--jQueryと自作jsの読み込み-->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity = "sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin = "anonymous"></script>
+        <script src="../../../asset-common/js/theme.js"></script>
+        <script src="../../asset-common-for-article/js/article-theme.js"></script>
+        <script src="./asset/js/detail.js"></script>
+        <script src="./asset/js/additional.js"></script>
+    </body>
+</html>
